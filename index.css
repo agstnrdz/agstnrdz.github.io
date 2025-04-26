@@ -105,6 +105,26 @@ main {
     margin: 0;
     padding: 40px;
 }
+
+/* Novedades contenido */
+.novedades-contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.novedades-contenido img {
+    width: 180px; /* mismo tamaño que los certificados */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
+    transition: transform 0.1s ease;
+}
+
+.novedades-texto {
+    flex: 1;
+}
+
 .certificados-container {
     display: flex;
     justify-content: center;
