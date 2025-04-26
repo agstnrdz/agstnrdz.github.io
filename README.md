@@ -1,4 +1,4 @@
-## Agustín Rodriguez
+## Agustín Alejandro Rodriguez
 Este es mi sitio web personal donde comparto novedades y proyectos. <a href="https://agstnrdz.github.io">IR</a>
 
 ### ¿Cómo empezar?
