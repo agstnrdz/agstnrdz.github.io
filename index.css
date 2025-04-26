@@ -114,11 +114,13 @@ main {
 }
 
 .novedades-contenido img {
-    width: 180px; /* mismo tamaño que los certificados */
+    width: 180px; /* Mismo tamaño que los certificados */
+    max-width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: transform 0.1s ease;
+    object-fit: cover; /* Para que se recorte elegante si es necesario */
 }
 
 .novedades-texto {
