@@ -114,8 +114,7 @@ main {
 }
 
 .novedades-contenido img {
-    width: 180px; /* Mismo tamaño que los certificados */
-    max-width: 100%;
+    max-width: 180px; /* Mismo tamaño que los certificados */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
