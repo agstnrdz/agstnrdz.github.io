@@ -66,24 +66,32 @@ main {
     gap: 20px;
 }
 
-/* Título alineado a la izquierda */
-.header-container h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    text-align: left;
-    color: #222;
-    flex: 1;
-    z-index: 2;
+/* Contenedor del header con texto superpuesto a la imagen */
+.header-container {
     position: relative;
+    height: 300px;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Imagen del header */
+/* Imagen de fondo del header */
 .header-image {
-    max-width: 400px;
-    height: auto;
-    position: relative;
-    flex-shrink: 0;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Difuminado hacia la izquierda */
@@ -91,17 +99,20 @@ main {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, rgba(255,255,255,0) 0%, #fff 20%);
+    background: linear-gradient(to left, rgba(255,255,255,0) 0%, #fff 25%);
     z-index: 1;
 }
 
-.header-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    z-index: 0;
+/* Título sobre la imagen */
+.header-container h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: left;
+    color: #222;
+    margin: 0 40px;
 }
