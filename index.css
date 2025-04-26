@@ -57,28 +57,16 @@ main {
     margin: 0 0 10px 0;
 }
 
-/* Contenedor del header con texto e imagen */
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px;
-    gap: 20px;
-}
-
-/* Contenedor del header con texto superpuesto a la imagen */
+/* Contenedor del header con imagen de fondo y título encima */
 .header-container {
     position: relative;
     height: 300px;
     max-width: 1000px;
     margin: 40px auto;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Imagen de fondo del header */
+/* Imagen de fondo */
 .header-image {
     position: absolute;
     top: 0;
@@ -94,19 +82,19 @@ main {
     object-fit: cover;
 }
 
-/* Difuminado hacia la izquierda */
+/* Difuminado solo en el borde izquierdo */
 .header-image::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    width: 100%;
+    left: 0;
+    width: 30%; /* más estrecho para que se vea más imagen */
     height: 100%;
-    background: linear-gradient(to left, rgba(255,255,255,0) 0%, #fff 25%);
+    background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
     z-index: 1;
 }
 
-/* Título sobre la imagen */
+/* Título encima de la imagen, alineado a la izquierda */
 .header-container h1 {
     position: relative;
     z-index: 2;
@@ -114,5 +102,6 @@ main {
     font-weight: 900;
     text-align: left;
     color: #222;
-    margin: 0 40px;
+    margin: 0;
+    padding: 40px;
 }
