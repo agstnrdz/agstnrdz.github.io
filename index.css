@@ -88,7 +88,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%; /* más estrecho para que se vea más imagen */
+    width: 50%; /* más estrecho para que se vea más imagen */
     height: 100%;
     background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
     z-index: 1;
@@ -101,7 +101,7 @@ main {
     font-size: 4rem;
     font-weight: 900;
     text-align: left;
-    color: #222;
+    color: #000; /* #222 es gris oscuro */
     margin: 0;
     padding: 40px;
 }
