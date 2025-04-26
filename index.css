@@ -121,13 +121,13 @@ main {
 .certificado img {
     width: 100%;
     height: auto;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
 }
 
 .certificado img:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
 .certificado p {
