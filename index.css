@@ -110,7 +110,9 @@ main {
 .novedades-contenido {
     display: flex;
     align-items: center;
+    flex-wrap: warp;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .novedades-contenido img {
