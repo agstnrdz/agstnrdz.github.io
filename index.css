@@ -29,7 +29,7 @@ main {
 .card {
     background-color: #f9f9f9;
     border-radius: 20px;
-    padding: 20px 30px 30px 30px; /* menos espacio arriba */
+    padding: 20px 30px 30px 30px;
     margin: 20px 0;
     width: 100%;
     max-width: 800px;
@@ -46,7 +46,7 @@ main {
 .card h2 {
     font-size: 2rem;
     font-weight: 500;
-    margin-top: 0; /* eliminar margen superior */
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -82,26 +82,25 @@ main {
     object-fit: cover;
 }
 
-/* Difuminado solo en el borde izquierdo */
 .header-image::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%; /* más estrecho para que se vea más imagen */
+    width: 50%;
     height: 100%;
     background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
     z-index: 1;
 }
 
-/* Título encima de la imagen, alineado a la izquierda */
+/* Título encima de la imagen */
 .header-container h1 {
     position: relative;
     z-index: 2;
     font-size: 4rem;
     font-weight: 900;
     text-align: left;
-    color: #000; /* #222 es gris oscuro */
+    color: #000;
     margin: 0;
     padding: 40px;
 }
@@ -109,29 +108,38 @@ main {
 /* Novedades contenido */
 .novedades-contenido {
     display: flex;
-    flex-direction: column; /* <--- Esto acomoda uno debajo del otro */
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
     margin-top: 20px;
 }
 
-.novedades-img img {
-    max-width: 180px; /* Mismo tamaño que los certificados */
+/* Cada ítem de novedades */
+.novedad-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Imágenes de novedades */
+.novedad-item img {
+    width: 180px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
     transition: transform 0.3s ease;
-    object-fit: cover; /* Para que se recorte elegante si es necesario */
+    object-fit: cover;
 }
 
-.novedades-contenido img:hover { /* Este es el hover de novedades contenido. Los ajustes de interacción */
-    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+.novedad-item img:hover {
+    transform: scale(1.1);
 }
 
+/* Texto al lado de la imagen */
 .novedades-texto {
     flex: 1;
 }
 
+/* Certificados */
 .certificados-container {
     display: flex;
     justify-content: center;
