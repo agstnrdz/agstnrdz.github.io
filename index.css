@@ -115,7 +115,7 @@ main {
     margin-top: 20px;
 }
 
-.novedades-contenido img {
+.novedades-img img {
     max-width: 180px; /* Mismo tamaño que los certificados */
     height: auto;
     border-radius: 10px;
