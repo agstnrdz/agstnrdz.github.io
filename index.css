@@ -8,12 +8,16 @@ body {
     color: #333;
 }
 /* ---------- Título ---------- */
-header h1 {
+.header-container h1 {
+    /* estas controlan solo al título */
+    position: relative;
+    z-index: 2;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
-    margin: 40px;
-    color: #222;
+    color: #000;
+    margin: 0;
+    padding: 40px;
 }
 /* ---------- Contenedor principal ---------- */
 main {
@@ -52,13 +56,14 @@ main {
 }
 /* ----- Contenedor del header con imagen de fondo y título encima ----- */
 .header-container {
+    /* Contenedor padre */
     position: relative;
     height: 300px;
     max-width: 1000px;
     margin: 40px auto;
     overflow: hidden;
 }
-/* ----- Imagen de fondo del header ----- */
+ /* ----- Imagen de fondo del header ----- */
 .header-image {
     position: absolute;
     top: 0;
