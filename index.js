@@ -1,7 +1,9 @@
 // Lista de imágenes para el header
 const headerImages = [
   "https://pbs.twimg.com/media/Ggmha1VWEAAGQbH?format=jpg&name=large",
-  "https://agstnrdz.github.io/img/Maserati_1958_header.png"
+  "https://agstnrdz.github.io/img/Maserati_1958_header.png",
+  "https://agstnrdz.github.io/img/Chubut_img_sat.jpg",
+  "https://agstnrdz.github.io/img/Chubut_img_sat_3.jpg"
 ];
 // -----
 // Selecciono el elemento img del header
