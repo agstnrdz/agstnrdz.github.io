@@ -31,7 +31,7 @@ main {
 /* ----- ----- */
 /* ---------- Tarjetas general ---------- */
 .card {
-    background-color: #f9f9f9;
+    background-color: #fefefe;
     border-radius: 20px;
     padding: 20px 30px 30px 30px;
     margin: 20px 0;
@@ -85,7 +85,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
     opacity: 1
 }
 /* ----- ----- */
