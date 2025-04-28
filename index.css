@@ -9,7 +9,7 @@ body {
 }
 /* ---------- Título ---------- */
 .header-container h1 {
-    /* estas controlan solo al título */
+    /* Estas controlan solo al título */
     position: relative;
     z-index: 2;
     font-size: 4rem;
@@ -92,7 +92,7 @@ main {
     position: relative;
     z-index: 2;
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 400;
     text-align: left;
     color: #000;
     margin: 0;
