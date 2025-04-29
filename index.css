@@ -209,6 +209,7 @@ main {
   flex-direction: column;
   height: 100%; /* <- Esto ayuda a que todas tomen la misma altura dentro de su contenedor */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0; /* Que no haya margenes en la imagen */
 }
 
 .service-card:hover { /* Este es el efecto de hover para las tarjetas individuales */
@@ -221,6 +222,7 @@ main {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  margin: 0;
 }
 
 .service-type {
