@@ -31,7 +31,7 @@ setInterval(changeHeaderImage, 10000);
 // -----
 // Animación de entrada suave para las tarjetas
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.card, .service-card');
+    const cards = document.querySelectorAll('.card, .service-card, presentacion-container, presentacion, presentacion-destacada');
 
     cards.forEach((card, index) => {
         setTimeout(() => {
