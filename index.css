@@ -134,7 +134,7 @@ main {
 
 .presentacion-item {
   flex: none; /* Esto hace que el item sólo ocupe el espacio que necesita */
-  text-allign: center;
+  text-align: center;
 }
 
 .presentacion-item p {
