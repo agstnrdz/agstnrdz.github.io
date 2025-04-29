@@ -192,10 +192,24 @@ main {
 /* ---------- Tarjeta: Contenedores de Servicios ---------- */
 .services-container {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Scroll horizontal */
+  ms-overflow-style: none; /* IE y EDGE */
+  scrollbar-width: noneM /* Firefox */
   justify-content: center;
   padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.services-container::-webkit-scrollbar {
+    height: 8px; /* Tamaño de la barra de scroll */
+    display: none; /*Chrome, Safari y Opera */
+}
+
+.services-container::-webkit-scrollbar-thumb {
+    background: #ccc
+    border-radius: 4px;
 }
 
 .service-card {
