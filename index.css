@@ -140,6 +140,8 @@ main {
 .presentacion-item p {
   font-size: 18px;
   font-weight: 400;
+  font-style: bold;
+  letter-spacing: 0.8px;
   line-height: 1.25;
   margin: 0;
   color: #444;
