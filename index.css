@@ -143,6 +143,18 @@ main {
   margin: 0;
   color: #444;
 }
+/* ----- Colores para presentación ----- */
+.azul {
+  color: #1e90ff; /* Azul claro */
+}
+
+.rojo {
+  color: #e63946; /* Rojo */
+}
+
+.amarillo {
+  color: #f4d35e; /* Amarillo */
+}
 /* ----- ----- */
 /* ---------- Tarjeta: Novedades Contenido ---------- */
 .novedades-contenido {
