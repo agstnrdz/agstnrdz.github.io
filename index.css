@@ -208,8 +208,12 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%; /* <- Esto ayuda a que todas tomen la misma altura dentro de su contenedor */
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.service-card:hover { /* Este es el efecto de hover para las tarjetas individuales */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
 
 .service-card img {
@@ -233,21 +237,21 @@ main {
   margin: 0 16px;
 }
 
-.service-card p { 
+.service-card p { /* Este es el ajuste para service-card p */
   font-size: 14px;
   margin: 8px 16px;
   color: #333;
   flex-grow: 1; /* <- Esto hace que el párrafo ocupe el espacio disponible y empuje el link hacia abajo */
 }
 
-.service-card a {
+.service-card a { /* Este es el ajuste para service-card a */
   margin: 16px;
   font-weight: bold;
   color: #0077c2;
   text-decoration: none;
 }
 
-.service-card a:hover {
+.service-card a:hover { /* Este es el efecto de subrayado para el service-card a. */
   text-decoration: underline;
 }
 /* ----- ----- */
