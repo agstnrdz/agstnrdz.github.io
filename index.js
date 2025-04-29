@@ -15,17 +15,28 @@ let currentImageIndex = 0;
 function changeHeaderImage() {
   // Incrementa el índice y vuelve a 0 si llega al final
   currentImageIndex = (currentImageIndex + 1) % headerImages.length;
-
+  // -----
   // Aplica efecto de fundido (fade)
   headerImg.style.opacity = 0;
-
+  // -----
   // Luego de medio segundo cambia la imagen y vuelve a subir la opacidad
   setTimeout(() => {
     headerImg.src = headerImages[currentImageIndex];
     headerImg.style.opacity = 1;
   }, 500);
 }
-
+// -----
 // Cambia la imagen cada 10 segundos (10000 milisegundos)
 setInterval(changeHeaderImage, 10000);
+// -----
+// Animación de entrada suave para las tarjetas
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.card');
 
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('visible');
+        }, index * 200); // escalonado cada 200ms
+    });
+});
+// -----
