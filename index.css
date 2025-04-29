@@ -21,24 +21,7 @@ body {
     padding: 40px;
 }
 /* ----- ----- */
-/* ---------- Presentacion ---------- */
-.presentacion-container {
-    text-align: center;
-    margin: 30px auto;
-    padding: 10px;
-}
 
-.presentacion {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #555;
-}
-
-.presentacion.destacada {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #0077b6;
-}
 /* ----- ----- */
 /* ---------- Contenedor principal ---------- */
 main {
