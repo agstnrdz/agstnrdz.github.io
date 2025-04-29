@@ -207,6 +207,7 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%; /* <- Esto ayuda a que todas tomen la misma altura dentro de su contenedor */
 }
 
 .service-card img {
@@ -234,6 +235,7 @@ main {
   font-size: 14px;
   margin: 8px 16px;
   color: #333;
+  flex-grow: 1; /* <- Esto hace que el párrafo ocupe el espacio disponible y empuje el link hacia abajo */
 }
 
 .service-card a {
