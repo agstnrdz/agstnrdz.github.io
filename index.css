@@ -38,7 +38,14 @@ main {
     width: 100%;
     max-width: 800px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.8s ease, transform 0.8s ease; /* Animación inicial */
+    opacity: 0;
+    transform: translateY(20px);
+}
+/* ----- ----- */
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 /* ----- ----- */
 .card:hover {
@@ -211,17 +218,5 @@ main {
 .certificado p {
     margin-top: 10px;
     font-size: 0.9rem;
-}
-/* ----- ----- */
-/* Animación de entrada para las tarjetas */
-.card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-/* ----- ----- */
-.card.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 /* ----- ----- */
