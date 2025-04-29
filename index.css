@@ -124,11 +124,12 @@ main {
 /* ---------- Presentacion ---------- */
 .presentacion {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  gap: 40px;
   margin-bottom: 15px;
   margin-top: 50px;
+  flex-wrap: nowrap;
 }
 
 .presentacion-item {
@@ -137,8 +138,8 @@ main {
 }
 
 .presentacion-item p {
-  font-size: 16px;
-  weight: 400;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.25;
   margin: 0;
   color: #444;
