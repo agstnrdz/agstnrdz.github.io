@@ -237,10 +237,11 @@ main {
   flex-wrap: nowrap;
   overflow-x: auto; /* Scroll horizontal */
   ms-overflow-style: none; /* IE y EDGE */
-  scrollbar-width: noneM /* Firefox */
+  scrollbar-width: none /* Firefox */
   justify-content: center;
   padding: 20px;
   scroll-behavior: smooth;
+  cursor: grab;
 }
 
 .services-container::-webkit-scrollbar {
@@ -249,13 +250,17 @@ main {
 }
 
 .services-container::-webkit-scrollbar-thumb {
-    background: #ccc
+    background: #ccc;
     border-radius: 4px;
 }
 
 .services-container.arrastrando {
   cursor: grabbing;
   cursor: -webkit-grabbing;
+}
+
+.services-container {
+  cursor: grab;
 }
 
 .service-card {
