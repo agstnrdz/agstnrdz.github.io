@@ -148,11 +148,11 @@ main {
 }
 /* ----- Colores para presentación ----- */
 .azul {
-  color: #57ACFF; /* Azul claro */
+  color: #222222; /* #57ACFF Azul claro */
 }
 
 .rojo {
-  color: #A81313; /* Rojo */
+  color: #222222;; /* #A81313 Rojo */
 }
 
 .amarillo {
