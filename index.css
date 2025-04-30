@@ -261,6 +261,7 @@ main {
   text-align: left;
   overflow: hidden;
   display: flex;
+  flex: 0 0 300px; /* Fija el ancho */
   flex-direction: column;
   height: 100%; /* <- Esto ayuda a que todas tomen la misma altura dentro de su contenedor */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
