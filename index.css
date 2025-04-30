@@ -139,12 +139,12 @@ main {
 
 .presentacion-item p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: bold;
   letter-spacing: 1px;
   line-height: 1.25;
   margin: 0;
-  color: #7A7A7A;
+  color: ##8E8E8E;
 }
 /* ----- Colores para presentación ----- */
 .azul {
