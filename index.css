@@ -253,6 +253,11 @@ main {
     border-radius: 4px;
 }
 
+.services-container.arrastrando {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
 .service-card {
   background: #fff;
   border-radius: 15px;
