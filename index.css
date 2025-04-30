@@ -126,7 +126,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 90px;
   margin-bottom: 15px;
   margin-top: 50px;
   flex-wrap: nowrap;
@@ -139,12 +139,12 @@ main {
 
 .presentacion-item p {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   font-style: bold;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   line-height: 1.25;
   margin: 0;
-  color: #A2A2A2;
+  color: #7A7A7A;
 }
 /* ----- Colores para presentación ----- */
 .azul {
