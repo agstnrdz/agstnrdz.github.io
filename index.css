@@ -144,15 +144,15 @@ main {
   letter-spacing: 3px;
   line-height: 1.25;
   margin: 0;
-  color: #444;
+  color: #A2A2A2;
 }
 /* ----- Colores para presentación ----- */
 .azul {
-  color: #1e90ff; /* Azul claro */
+  color: #57ACFF; /* Azul claro */
 }
 
 .rojo {
-  color: #950000; /* Rojo */
+  color: #A81313; /* Rojo */
 }
 
 .amarillo {
