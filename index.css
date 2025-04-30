@@ -263,6 +263,12 @@ main {
   cursor: grab;
 }
 
+.services-container, /* Esto evita seleccionar texto */
+.services-container * {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .service-card {
   background: #fff;
   border-radius: 15px;
