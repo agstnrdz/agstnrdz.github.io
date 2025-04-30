@@ -232,6 +232,7 @@ main {
 /* ---------- Tarjeta: Contenedores de Servicios ---------- */
 .services-container {
   display: flex;
+  flex-direction: row;
   gap: 30px;
   flex-wrap: nowrap;
   overflow-x: auto; /* Scroll horizontal */
