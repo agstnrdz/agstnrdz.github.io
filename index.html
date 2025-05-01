@@ -210,35 +210,35 @@
 <!-- ---------- ---------- -->
 <!-- Script p/ habilitar el desplazamiento horizontal arrastrando con el mouse en el contenedor de servicios -->
 <script>
-const container = document.querySelector('.services-container');
-let isDown = false;
-let startX;
-let scrollLeft;
+  const container = document.querySelector('.services-container');
+  let isDragging = false;
+  let startX;
+  let scrollStart;
 
-container.addEventListener('mousedown', (e) => {
-  isDown = true;
-  container.classList.add('arrastrando');
-  startX = e.pageX - container.offsetLeft;
-  scrollLeft = container.scrollLeft;
-});
+  container.addEventListener('pointerdown', (e) => {
+    isDragging = true;
+    container.classList.add('arrastrando');
+    startX = e.pageX;
+    scrollStart = container.scrollLeft;
+    container.setPointerCapture(e.pointerId);
+  });
 
-container.addEventListener('mouseleave', () => {
-  isDown = false;
-  container.classList.remove('arrastrando');
-});
+  container.addEventListener('pointermove', (e) => {
+    if (!isDragging) return;
+    const deltaX = e.pageX - startX;
+    container.scrollLeft = scrollStart - deltaX;
+  });
 
-container.addEventListener('mouseup', () => {
-  isDown = false;
-  container.classList.remove('arrastrando');
-});
+  container.addEventListener('pointerup', () => {
+    isDragging = false;
+    container.classList.remove('arrastrando');
+  });
 
-container.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - container.offsetLeft;
-  const walk = (x - startX) * 2; // velocidad del desplazamiento
-  container.scrollLeft = scrollLeft - walk;
-});
+  container.addEventListener('pointercancel', () => {
+    isDragging = false;
+    container.classList.remove('arrastrando');
+  });
 </script>
+
 </body>
 </html>
