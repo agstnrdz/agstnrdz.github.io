@@ -40,3 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // -----
+// Relentizar el scroll
+let scrollSpeed = 0.2; // ajusta este valor para mayor o menor velocidad
+
+window.addEventListener('wheel', function(e) {
+  e.preventDefault();
+  window.scrollBy({
+    top: e.deltaY * scrollSpeed,
+    behavior: 'smooth'
+  });
+}, { passive: false });
+// -----
