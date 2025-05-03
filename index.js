@@ -40,14 +40,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // -----
-// Relentizar el scroll
-let scrollSpeed = 100; // ajusta este valor para mayor o menor velocidad
-
-window.addEventListener('wheel', function(e) {
-  e.preventDefault();
-  window.scrollBy({
-    top: e.deltaY * scrollSpeed,
-    behavior: 'smooth'
-  });
-}, { passive: false });
-// -----
