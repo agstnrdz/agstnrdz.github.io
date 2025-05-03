@@ -237,7 +237,7 @@ main {
   flex-wrap: nowrap;
   overflow-x: auto; /* Scroll horizontal */
   ms-overflow-style: none; /* IE y EDGE */
-  scrollbar-width: none /* Firefox */
+  scrollbar-width: none; /* Firefox */
   justify-content: center;
   padding: 20px;
   scroll-behavior: smooth;
