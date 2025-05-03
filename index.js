@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // -----
 // Relentizar el scroll
-let scrollSpeed = 20; // ajusta este valor para mayor o menor velocidad
+let scrollSpeed = 100; // ajusta este valor para mayor o menor velocidad
 
 window.addEventListener('wheel', function(e) {
   e.preventDefault();
