@@ -238,7 +238,7 @@ main {
   overflow-x: auto; /* Scroll horizontal */
   ms-overflow-style: none; /* IE y EDGE */
   scrollbar-width: none; /* Firefox */
-  justify-content: center;
+  justify-content: flex-start; /* Comienza con el primer contenedor */
   padding: 20px;
   scroll-behavior: smooth;
   cursor: grab;
