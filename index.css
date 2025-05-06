@@ -159,39 +159,6 @@ main {
   color: #C0AC00; /* Amarillo */
 }
 /* ----- ----- */
-/* ---------- Frases animadas ---------- */
-.rotating-text {
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  margin: 30px auto;
-  line-height: 1.2;
-  color: #333;
-}
-
-#highlighted-phrase {
-  background: #EDF6FF;
-  color: #6B6B6B;
-  padding: 20px 30px;
-  border-radius: 40px;
-  box-shadow: 
-    inset 0 0 20px rgba(0, 0, 0, 0.3),
-    0 8px 24px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  min-width: 500px;
-  min-height: 160px; /* altura fija para evitar saltos */
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#phrase-text {
-  transition: opacity 0.6s ease;
-  text-shadow: 0px 2px 16px rgba(0,0,0,0.3);
-}
-/* ----- ----- */
 /* ---------- Prueba ---------- */
 .hero-text {
   font-size: 38px;
