@@ -165,7 +165,7 @@ main {
   font-weight: 700;
   text-align: center;
   margin: 30px auto;
-  max-width: 500px;
+  max-width: auto;
   line-height: 1;
   color: #333;
 }
