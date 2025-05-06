@@ -208,36 +208,6 @@ main {
     margin-down: 5px
 }
 /* ----- ----- */
-/* ---------- Tarjeta: Actualizaciones contenido ---------- */
-.actualizaciones-contenido {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 20px;
-}
-/* ----- ----- */
-/* Cada ítem de Actualizaciones */
-.actualizaciones-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-/* ----- ----- */
-/* Imágenes de Actualizaciones */
-.actualizaciones-item img {
-    width: 120px;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
-    transition: transform 0.3s ease;
-    object-fit: cover;
-}
-/* ----- ----- */
-/* Efecto de imagenes de Actualizaciones */
-.actualizaciones-item img:hover {
-    transform: scale(1.1);
-}
-/* ----- ----- */
 /* Texto al lado de la imagen */
 .actualizaciones-texto {
     flex: 1;
