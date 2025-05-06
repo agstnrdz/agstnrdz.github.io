@@ -204,8 +204,8 @@ main {
 
 .bubble {
   display: inline-block;
-  background: linear-gradient(145deg, #e0f7f4, #d0f2ee);
-  color: #00876c;
+  background: linear-gradient(145deg, #d0e5f2, #e1e9f7);
+  color: #006A87;
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow: 
