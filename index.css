@@ -163,6 +163,7 @@ main {
 .presentacion2-container {
   position: relative;
   overflow: hidden;
+  margin-top: 20px;
   height: 265px;
 }
 
