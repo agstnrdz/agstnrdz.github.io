@@ -40,12 +40,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // -----
-// Movimiento de frases presentación
-  const frases = document.querySelectorAll(".presentacion2-text");
-  let index = 0;
-
-  setInterval(() => {
-    frases[index].classList.remove("active");
-    index = (index + 1) % frases.length;
-    frases[index].classList.add("active");
-  }, 5000);
