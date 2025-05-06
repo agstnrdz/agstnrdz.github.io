@@ -189,14 +189,18 @@ main {
   pointer-events: auto; /* Para que todos los objetos sean interactuables */
 }
 
-@keyframes bounceIn { /* Efecto rebote de la burbuja en la transición */
+@keyframes burbujaRebote {
   0% {
-    transform: scale(0.9);
-    opacity: 0;
+    transform: scale(1);
   }
-  60% {
-    transform: scale(1.05);
-    opacity: 1;
+  30% {
+    transform: scale(1.15, 0.85);
+  }
+  50% {
+    transform: scale(0.95, 1.05);
+  }
+  70% {
+    transform: scale(1.05, 0.95);
   }
   100% {
     transform: scale(1);
@@ -219,8 +223,8 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.presentacion2-burbuja.bounce {
-    animation: bounceIn 0.6s ease;
+.presentacion2-burbuja.rebote {
+  animation: burbujaRebote 0.6s ease;
 }
 
 .presentacion2-burbuja:hover {
