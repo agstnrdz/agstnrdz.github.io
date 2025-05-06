@@ -245,5 +245,24 @@
   });
 </script>
 <!-- ---------- ---------- -->
+<script>
+  const phrases = [
+    "Analista de Sistemas de Información Geográfica en la Dirección General de Modernización e Investigación Territorial",
+    "Auxiliar de cátedra en Teledetección II (UNPSJB) desde 2023"
+  ];
+
+  let i = 0;
+  const phraseEl = document.getElementById("highlighted-phrase");
+
+  setInterval(() => {
+    phraseEl.style.opacity = 0;
+    setTimeout(() => {
+      i = (i + 1) % phrases.length;
+      phraseEl.textContent = phrases[i];
+      phraseEl.style.opacity = 1;
+    }, 600); // tiempo entre el fade-out y el cambio de texto
+  }, 5000); // cambia cada 5 segundos
+</script>
+<!-- ---------- ---------- -->
 </body>
 </html>
