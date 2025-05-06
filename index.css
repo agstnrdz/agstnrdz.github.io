@@ -125,7 +125,7 @@ main {
 .presentacion2-container {
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 40px;
   height: 265px;
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -177,7 +177,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 5px;
 }
 /* ----- ----- */
 /* Cada ítem de Novedades */
@@ -205,12 +204,7 @@ main {
 /* Texto al lado de la imagen */
 .novedades-texto {
     flex: 1;
-    margin-down: 5px
-}
-/* ----- ----- */
-/* Texto al lado de la imagen */
-.actualizaciones-texto {
-    flex: 1;
+    margin-down: 10px
 }
 /* ----- ----- */
 /* ---------- Tarjeta: Contenedores de Servicios ---------- */
