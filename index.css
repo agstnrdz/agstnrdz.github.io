@@ -189,22 +189,34 @@ main {
   pointer-events: auto; /* Para que todos los objetos sean interactuables */
 }
 
-@keyframes burbujaRebote {
+@keyframes containerUpOut {
   0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.15, 0.85);
-  }
-  50% {
-    transform: scale(0.95, 1.05);
-  }
-  70% {
-    transform: scale(1.05, 0.95);
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-    transform: scale(1);
+    opacity: 0;
+    transform: translateY(-50px);
   }
+}
+
+@keyframes containerDownIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.presentacion2-container.anim-out {
+  animation: containerUpOut 0.5s ease forwards;
+}
+
+.presentacion2-container.anim-in {
+  animation: containerDownIn 0.5s ease forwards;
 }
 
 .presentacion2-burbuja {
