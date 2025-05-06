@@ -256,5 +256,17 @@
   });
 </script>
 <!-- ---------- ---------- -->
+<!-- Script p/ movimiento de Presentación 2 -->
+<script>
+  const frases = document.querySelectorAll(".presentacion2-text");
+  let index = 0;
+
+  setInterval(() => {
+    frases[index].classList.remove("active");
+    index = (index + 1) % frases.length;
+    frases[index].classList.add("active");
+  }, 5000);
+</script>
+<!-- ---------- ---------- -->
 </body>
 </html>
