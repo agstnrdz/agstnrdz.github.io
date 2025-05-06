@@ -194,10 +194,10 @@ main {
 /* ----- ----- */
 /* ---------- Prueba ---------- */
 .hero-text {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   text-align: center;
-  color: #333;
+  color: #000000;
   font-family: sans-serif;
   line-height: 1.2;
 }
@@ -212,7 +212,7 @@ main {
     inset 0 0 5px rgba(0, 0, 0, 0.1),
     0 4px 10px rgba(0, 0, 0, 0.15);
   font-weight: 600;
-  font-size: 42px;
+  font-size: 46px;
   margin-left: 8px;
 }
 /* ----- ----- */
