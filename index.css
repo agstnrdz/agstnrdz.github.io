@@ -247,6 +247,7 @@ main {
 /* Texto al lado de la imagen */
 .novedades-texto {
     flex: 1;
+    margin-down: 5px
 }
 /* ----- ----- */
 /* ---------- Tarjeta: Actualizaciones contenido ---------- */
