@@ -178,7 +178,7 @@ main {
     inset 0 0 15px rgba(0, 0, 0, 0.15),
     0 8px 24px rgba(0, 0, 0, 0.3);
   display: inline-block;
-  min-width: 400px;
+  min-width: 800px;
   min-height: 180px; /* altura fija para evitar saltos */
   text-align: center;
   box-sizing: border-box;
