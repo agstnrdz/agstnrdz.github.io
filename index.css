@@ -121,44 +121,6 @@ main {
     padding: 40px;
 }
 /* ----- ----- */
-/* ---------- Presentacion ---------- */
-.presentacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  margin-bottom: 15px;
-  margin-top: 50px;
-  flex-wrap: nowrap;
-}
-
-.presentacion-item {
-  flex: none; /* Esto hace que el item sólo ocupe el espacio que necesita */
-  text-align: center;
-}
-
-.presentacion-item p {
-  font-size: 16px;
-  font-weight: 500;
-  font-style: bold;
-  letter-spacing: 1px;
-  line-height: 1.25;
-  margin: 0;
-  color: #8E8E8E;
-}
-/* ----- Colores para presentación ----- */
-.azul {
-  color: #222222; /* #57ACFF Azul claro */
-}
-
-.rojo {
-  color: #222222;; /* #A81313 Rojo */
-}
-
-.amarillo {
-  color: #C0AC00; /* Amarillo */
-}
-/* ----- ----- */
 /* ---------- Presentación 2 ---------- */
 .presentacion2-container {
   position: relative;
