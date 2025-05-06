@@ -38,7 +38,11 @@
     </div>
 <!-- ---------- Frases animadas ---------- -->
 <p class="rotating-text">
-  <span id="highlighted-phrase">Analista de <br> Sistemas de Información Geográfica<br> en la Dirección General de Modernización<br> e Investigación Territorial</span>
+  <span id="highlighted-phrase">
+    <span id="phrase-text">
+      Analista de <br>Sistemas de Información Geográfica<br>en la Dirección General de Modernización<br>e Investigación Territorial
+    </span>
+  </span>
 </p>
 <!-- ---------- ---------- -->
     <main>
@@ -247,21 +251,21 @@
 <!-- ---------- ---------- -->
 <script>
   const phrases = [
-    "Analista de <br> Sistemas de Información Geográfica<br> en la Dirección General de Modernización<br> e Investigación Territorial",
-    "Auxiliar de cátedra en <br> Teledetección II <br> (UNPSJB) desde 2023"
+    "Analista de <br>Sistemas de Información Geográfica<br>en la Dirección General de Modernización<br>e Investigación Territorial",
+    "Auxiliar de cátedra en <br>Teledetección II <br>(UNPSJB) desde 2023"
   ];
 
   let i = 0;
-  const phraseEl = document.getElementById("highlighted-phrase");
+  const phraseEl = document.getElementById("phrase-text");
 
   setInterval(() => {
     phraseEl.style.opacity = 0;
     setTimeout(() => {
       i = (i + 1) % phrases.length;
-      phraseEl.innerHTML = phrases[i];  // innerHTML hace que le haga caso a los saltos de línea
+      phraseEl.innerHTML = phrases[i];
       phraseEl.style.opacity = 1;
-    }, 2000); // tiempo entre el fade-out y el cambio de texto
-  }, 5000); // cambia cada 5 segundos
+    }, 800);
+  }, 5000);
 </script>
 <!-- ---------- ---------- -->
 </body>
