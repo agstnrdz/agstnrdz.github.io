@@ -163,7 +163,7 @@ main {
 .presentacion2-container {
   position: relative;
   overflow: hidden;
-  height: 290px; /* Ajustar según contenido */
+  height: 280px; /* Ajustar según contenido */
 }
 
 .presentacion2-text {
