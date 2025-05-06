@@ -221,34 +221,42 @@
 <!-- ---------- ---------- -->
 <!-- Script p/ habilitar el desplazamiento horizontal arrastrando con el mouse en el contenedor de servicios -->
 <script>
-  const container = document.querySelector('.services-container');
-  let isDragging = false;
-  let startX;
-  let scrollStart;
+const container = document.getElementById("presentacionContainer");
+const fraseEl = document.getElementById("frase");
 
-  container.addEventListener('pointerdown', (e) => {
-    isDragging = true;
-    container.classList.add('arrastrando');
-    startX = e.pageX;
-    scrollStart = container.scrollLeft;
-    container.setPointerCapture(e.pointerId);
-  });
+const frases = [
+  `Analista de<br>
+  <span class="presentacion2-burbuja">Sistemas de Información Geográfica</span><br>
+  en Dirección General de Modernización<br>
+  e Investigación Territorial`,
 
-  container.addEventListener('pointermove', (e) => {
-    if (!isDragging) return;
-    const deltaX = e.pageX - startX;
-    container.scrollLeft = scrollStart - deltaX;
-  });
+  `Auxiliar de cátedra en<br>
+  <span class="presentacion2-burbuja">Teledetección II</span><br>
+  (UNPSJB) desde 2023`
+];
 
-  container.addEventListener('pointerup', () => {
-    isDragging = false;
-    container.classList.remove('arrastrando');
-  });
+let index = 0;
 
-  container.addEventListener('pointercancel', () => {
-    isDragging = false;
-    container.classList.remove('arrastrando');
-  });
+function cambiarFrase() {
+  container.classList.add("ocultar");
+
+  setTimeout(() => {
+    index = (index + 1) % frases.length;
+    fraseEl.innerHTML = frases[index];
+
+    // Rebote a burbujas nuevas
+    const burbujas = fraseEl.querySelectorAll(".presentacion2-burbuja");
+    burbujas.forEach(el => {
+      el.classList.remove("rebote");
+      void el.offsetWidth;
+      el.classList.add("rebote");
+    });
+
+    container.classList.remove("ocultar");
+  }, 500);
+}
+
+setInterval(cambiarFrase, 5000);
 </script>
 <!-- ---------- ---------- -->
 <!-- Script para transición -->
