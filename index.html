@@ -258,7 +258,7 @@
     phraseEl.style.opacity = 0;
     setTimeout(() => {
       i = (i + 1) % phrases.length;
-      phraseEl.textContent = phrases[i];
+      phraseEl.innerHTML = phrases[i];  // innerHTML hace que le haga caso a los saltos de línea
       phraseEl.style.opacity = 1;
     }, 800); // tiempo entre el fade-out y el cambio de texto
   }, 5000); // cambia cada 5 segundos
