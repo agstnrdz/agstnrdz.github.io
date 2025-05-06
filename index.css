@@ -165,6 +165,12 @@ main {
   overflow: hidden;
   margin-top: 20px;
   height: 265px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.presentacion2-container.ocultar {
+    opacity: 0;
 }
 
 .presentacion2-text {
@@ -175,37 +181,6 @@ main {
   font-family: sans-serif;
   line-height: 1.4;
   position: relative;
-}
-
-/* Animaciones de entrada y salida del container */
-@keyframes containerUpOut {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-}
-
-@keyframes containerDownIn {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.presentacion2-container.anim-out {
-  animation: containerUpOut 0.5s ease forwards;
-}
-
-.presentacion2-container.anim-in {
-  animation: containerDownIn 0.5s ease forwards;
 }
 
 /* Estilo de la burbuja */
@@ -223,19 +198,6 @@ main {
   font-size: 40px;
   margin-left: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Rebote */
-@keyframes burbujaRebote {
-  0% { transform: scale(1); }
-  30% { transform: scale(1.15, 0.85); }
-  50% { transform: scale(0.95, 1.05); }
-  70% { transform: scale(1.05, 0.95); }
-  100% { transform: scale(1); }
-}
-
-.presentacion2-burbuja.rebote {
-  animation: burbujaRebote 0.6s ease;
 }
 
 /* Hover de burbuja */
