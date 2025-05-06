@@ -169,12 +169,12 @@ main {
 /* ----- ----- */
 /* ---------- Frases animadas ---------- */
 .rotating-text {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 700;
   text-align: center;
   margin: 30px auto;
-  max-width: 800px;
-  line-height: 1.5;
+  max-width: 500px;
+  line-height: 1;
   color: #333;
 }
 
@@ -182,7 +182,7 @@ main {
   background: #e0f0ff; /* fondo celeste suave */
   color: #004e7c; /* texto azul más fuerte */
   padding: 12px 18px;
-  border-radius: 25px; /* burbuja */
+  border-radius: 40px; /* burbuja */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   display: inline-block;
   transition: opacity 0.6s ease, transform 0.6s ease;
