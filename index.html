@@ -249,24 +249,5 @@
   });
 </script>
 <!-- ---------- ---------- -->
-<script>
-  const phrases = [
-    "Analista de <br>Sistemas de Información Geográfica<br>en la Dirección General de Modernización<br>e Investigación Territorial",
-    "Auxiliar de cátedra en <br>Teledetección II <br>(UNPSJB) desde 2023"
-  ];
-
-  let i = 0;
-  const phraseEl = document.getElementById("phrase-text");
-
-  setInterval(() => {
-    phraseEl.style.opacity = 0;
-    setTimeout(() => {
-      i = (i + 1) % phrases.length;
-      phraseEl.innerHTML = phrases[i];
-      phraseEl.style.opacity = 1;
-    }, 800);
-  }, 5000);
-</script>
-<!-- ---------- ---------- -->
 </body>
 </html>
