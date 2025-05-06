@@ -202,12 +202,12 @@ const fraseEl = document.getElementById("frase");
 
 const frases = [
   `Analista de<br>
-  <span class="presentacion2-burbuja">Sistemas de Información Geográfica</span><br>
+  <span class="presentacion-burbuja">Sistemas de Información Geográfica</span><br>
   en Dirección General de Modernización<br>
   e Investigación Territorial`,
 
   `Auxiliar de cátedra en<br>
-  <span class="presentacion2-burbuja">Teledetección II</span><br>
+  <span class="presentacion-burbuja">Teledetección II</span><br>
   (UNPSJB) desde 2023`
 ];
 
@@ -221,7 +221,7 @@ function cambiarFrase() {
     fraseEl.innerHTML = frases[index];
 
     // Rebote a burbujas nuevas
-    const burbujas = fraseEl.querySelectorAll(".presentacion2-burbuja");
+    const burbujas = fraseEl.querySelectorAll(".presentacion-burbuja");
     burbujas.forEach(el => {
       el.classList.remove("rebote");
       void el.offsetWidth;
