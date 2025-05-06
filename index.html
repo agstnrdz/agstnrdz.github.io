@@ -38,19 +38,13 @@
     </div>
 <!-- ---------- ---------- -->
 <!-- ---------- Presentación 2 ---------- -->
-<div class="presentacion2-container">
-  <p class="presentacion2-text active" id="frase1">
-  Analista de<br>
+<div class="presentacion2-container" id="presentacionContainer">
+  <p class="presentacion2-text" id="frase">
+    Analista de<br>
     <span class="presentacion2-burbuja">Sistemas de Información Geográfica</span><br>
     en Dirección General de Modernización<br>
     e Investigación Territorial
-</p>
-
-<p class="presentacion2-text" id="frase2">
-    Auxiliar de cátedra en<br>
-    <span class="presentacion2-burbuja">Teledetección II</span><br>
-    (UNPSJB) desde 2023
-</p>
+  </p>
 </div>
 <!-- ---------- ---------- -->
     <main>
@@ -257,30 +251,56 @@
   });
 </script>
 <!-- ---------- ---------- -->
-<!-- Script para transición y rebote de burbujas -->
+<!-- Script para transición -->
 <script>
-  const frases = document.querySelectorAll(".presentacion2-text");
-  let index = 0;
+const container = document.getElementById("presentacionContainer");
+const fraseEl = document.getElementById("frase");
 
-  setInterval(() => {
-    // Sacar active de la actual
-    frases[index].classList.remove("active");
+const frases = [
+  `Analista de<br>
+  <span class="presentacion2-burbuja">Sistemas de Información Geográfica</span><br>
+  en Dirección General de Modernización<br>
+  e Investigación Territorial`,
 
-    // Cambiar índice
+  `Auxiliar de cátedra en<br>
+  <span class="presentacion2-burbuja">Teledetección II</span><br>
+  (UNPSJB) desde 2023`
+];
+
+let index = 0;
+
+function cambiarFrase() {
+  // Sale hacia arriba
+  container.classList.add("anim-out");
+
+  // Esperamos que termine animación de salida (0.5s)
+  setTimeout(() => {
+    // Cambiar frase
     index = (index + 1) % frases.length;
+    fraseEl.innerHTML = frases[index];
 
-    // Agregar active a la nueva
-    frases[index].classList.add("active");
+    // Quitar animación de salida, poner animación de entrada
+    container.classList.remove("anim-out");
+    container.classList.add("anim-in");
 
-    // Agregar animación de rebote a las burbujas dentro de la frase activa
-    const burbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
+    // Rebote a la burbuja nueva
+    const burbujas = fraseEl.querySelectorAll(".presentacion2-burbuja");
     burbujas.forEach(el => {
-      el.classList.remove("rebote"); // por si quedó de antes
-      void el.offsetWidth; // truco para reiniciar animación CSS
+      el.classList.remove("rebote");
+      void el.offsetWidth;
       el.classList.add("rebote");
     });
 
-  }, 5000);
+    // Quitar anim-in al terminar
+    setTimeout(() => {
+      container.classList.remove("anim-in");
+    }, 500); // duración animación de entrada
+
+  }, 500); // duración animación de salida
+}
+
+// Arranca cada 5 segundos
+setInterval(cambiarFrase, 5000);
 </script>
 
 <!-- ---------- ---------- -->
