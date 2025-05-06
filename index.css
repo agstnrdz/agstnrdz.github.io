@@ -174,11 +174,18 @@ main {
   background: #EDF6FF; /* fondo celeste suave */
   color: #003452; /* texto azul más fuerte */
   padding: 10px 16px;
-  border-radius: 40px; /* burbuja */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 
+    inset 0 0 15px rgba(0, 0, 0, 0.2), /* sombra interior */
+    0 8px 24px rgba(0, 0, 0, 0.3); /* sombra exterior */
   display: inline-block;
   transition: opacity 0.6s ease, transform 0.6s ease;
   font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* sombra en las letras */
+  min-width: 500px; /* ancho mínimo para mantener tamaño fijo */
+  min-height: 200px; /* alto mínimo para mantener tamaño fijo */
+  text-align: center;
+  box-sizing: border-box;
 }
 /* ----- ----- */
 /* ---------- Tarjeta: Novedades Contenido ---------- */
