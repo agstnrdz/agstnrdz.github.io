@@ -10,7 +10,6 @@ body {
 /* ----- ----- */
 /* ---------- Título ---------- */
 .header-container h1 {
-    /* Estas controlan solo al título */
     position: relative;
     z-index: 2;
     font-size: 4rem;
@@ -113,10 +112,10 @@ main {
 .header-container h1 {
     position: relative;
     z-index: 2;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 600;
     text-align: left;
-    color: #000;
+    color: #1b1b1b;
     margin: 0;
     padding: 40px;
 }
