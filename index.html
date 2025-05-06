@@ -38,7 +38,7 @@
     </div>
 <!-- ---------- Frases animadas ---------- -->
 <p class="rotating-text">
-  <span id="highlighted-phrase">Analista de Sistemas de Información Geográfica en la Dirección General de Modernización e Investigación Territorial</span>
+  <span id="highlighted-phrase">Analista de <br> Sistemas de Información Geográfica<br> en la Dirección General de Modernización<br> e Investigación Territorial</span>
 </p>
 <!-- ---------- ---------- -->
     <main>
@@ -247,13 +247,8 @@
 <!-- ---------- ---------- -->
 <script>
   const phrases = [
-    "Analista de <br>
-      Sistemas de Información Geográfica<br>
-      en la Dirección General de Modernización<br>
-      e Investigación Territorial",
-    "Auxiliar de cátedra en <br>
-      Teledetección II <br>
-      (UNPSJB) desde 2023"
+    "Analista de <br> Sistemas de Información Geográfica<br> en la Dirección General de Modernización<br> e Investigación Territorial",
+    "Auxiliar de cátedra en <br> Teledetección II <br> (UNPSJB) desde 2023"
   ];
 
   let i = 0;
@@ -265,7 +260,7 @@
       i = (i + 1) % phrases.length;
       phraseEl.textContent = phrases[i];
       phraseEl.style.opacity = 1;
-    }, 600); // tiempo entre el fade-out y el cambio de texto
+    }, 800); // tiempo entre el fade-out y el cambio de texto
   }, 5000); // cambia cada 5 segundos
 </script>
 <!-- ---------- ---------- -->
