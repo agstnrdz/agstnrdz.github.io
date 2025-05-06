@@ -163,7 +163,7 @@ main {
 .presentacion2-container {
   position: relative;
   overflow: hidden;
-  height: 260px; /* Ajustar según contenido */
+  height: 250px; /* Ajustar según contenido 26 va bien */
 }
 
 .presentacion2-text {
@@ -191,13 +191,14 @@ main {
 
 .presentacion2-burbuja {
   display: inline-block;
-  background: linear-gradient(145deg, #d0e5f2, #e1e9f7);
+  background: linear-gradient(145deg, #c2e9fb, #e0f7fa, #ffffff);
   color: #006A87;
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow:
-    inset 0 0 5px rgba(0, 0, 0, 0.1),
-    0 4px 10px rgba(0, 0, 0, 0.15);
+    inset 0 4px 8px rgba(255, 255, 255, 0.5),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.15);
   font-weight: 600;
   font-size: 40px;
   margin-left: 8px;
@@ -207,8 +208,10 @@ main {
 .presentacion2-burbuja:hover {
   transform: translateY(-5px);
   box-shadow:
-    inset 0 0 5px rgba(0, 0, 0, 0.1),
-    0 8px 20px rgba(0, 0, 0, 0.25);
+    inset 0 4px 8px rgba(255, 255, 255, 0.5),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.1),
+    0 12px 25px rgba(0, 0, 0, 0.25),
+    0 0 8px rgba(0, 106, 135, 0.4);
 }
 /* ----- ----- */
 /* ---------- Tarjeta: Novedades Contenido ---------- */
