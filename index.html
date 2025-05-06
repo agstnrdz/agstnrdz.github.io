@@ -263,25 +263,26 @@
   let index = 0;
 
   setInterval(() => {
-    // Remover clase active de la frase actual
+    // Sacar active de la actual
     frases[index].classList.remove("active");
-
-    // También remover la clase de animación de burbuja anterior
-    const oldBurbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
-    oldBurbujas.forEach(el => el.classList.remove("bounce"));
 
     // Cambiar índice
     index = (index + 1) % frases.length;
 
-    // Agregar clase active a la nueva frase
+    // Agregar active a la nueva
     frases[index].classList.add("active");
 
     // Agregar animación de rebote a las burbujas dentro de la frase activa
-    const newBurbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
-    newBurbujas.forEach(el => el.classList.add("bounce"));
+    const burbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
+    burbujas.forEach(el => {
+      el.classList.remove("rebote"); // por si quedó de antes
+      void el.offsetWidth; // truco para reiniciar animación CSS
+      el.classList.add("rebote");
+    });
 
   }, 5000);
 </script>
+
 <!-- ---------- ---------- -->
 </body>
 </html>
