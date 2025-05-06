@@ -270,36 +270,32 @@ const frases = [
 let index = 0;
 
 function cambiarFrase() {
-  // Sale hacia arriba
   container.classList.add("anim-out");
 
-  // Esperamos que termine animación de salida (0.5s)
   setTimeout(() => {
-    // Cambiar frase
     index = (index + 1) % frases.length;
     fraseEl.innerHTML = frases[index];
 
-    // Quitar animación de salida, poner animación de entrada
+    // Agregamos la animación de entrada
     container.classList.remove("anim-out");
     container.classList.add("anim-in");
 
-    // Rebote a la burbuja nueva
+    // Agregar rebote a la nueva burbuja
     const burbujas = fraseEl.querySelectorAll(".presentacion2-burbuja");
     burbujas.forEach(el => {
-      el.classList.remove("rebote");
-      void el.offsetWidth;
+      el.classList.remove("rebote"); // reseteamos por si quedó alguna
+      void el.offsetWidth; // hack para forzar reflow
       el.classList.add("rebote");
     });
 
-    // Quitar anim-in al terminar
+    // Sacamos anim-in después de que termine
     setTimeout(() => {
       container.classList.remove("anim-in");
-    }, 500); // duración animación de entrada
+    }, 500);
 
-  }, 500); // duración animación de salida
+  }, 500);
 }
 
-// Arranca cada 5 segundos
 setInterval(cambiarFrase, 5000);
 </script>
 
