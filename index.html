@@ -257,39 +257,30 @@
   });
 </script>
 <!-- ---------- ---------- -->
-<!-- Script p/ movimiento de Presentación 2 -->
+<!-- Script para transición y rebote de burbujas -->
 <script>
   const frases = document.querySelectorAll(".presentacion2-text");
   let index = 0;
 
   setInterval(() => {
+    // Remover clase active de la frase actual
     frases[index].classList.remove("active");
+
+    // También remover la clase de animación de burbuja anterior
+    const oldBurbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
+    oldBurbujas.forEach(el => el.classList.remove("bounce"));
+
+    // Cambiar índice
     index = (index + 1) % frases.length;
+
+    // Agregar clase active a la nueva frase
     frases[index].classList.add("active");
+
+    // Agregar animación de rebote a las burbujas dentro de la frase activa
+    const newBurbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
+    newBurbujas.forEach(el => el.classList.add("bounce"));
+
   }, 5000);
-
-// Rebote de la burbuja de presentacion2 durante la transición de frases
-const frases = document.querySelectorAll(".presentacion2-text");
-let index = 0;
-
-setInterval(() => {
-  // Remover active
-  frases[index].classList.remove("active");
-
-  // También remover la clase de animación de burbuja anterior
-  const oldBurbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
-  oldBurbujas.forEach(el => el.classList.remove("bounce"));
-
-  // Cambiar índice
-  index = (index + 1) % frases.length;
-
-  // Agregar active
-  frases[index].classList.add("active");
-
-  // Agregar animación de rebote a las burbujas dentro de la frase activa
-  const newBurbujas = frases[index].querySelectorAll(".presentacion2-burbuja");
-  newBurbujas.forEach(el => el.classList.add("bounce"));
-}, 5000);
 </script>
 <!-- ---------- ---------- -->
 </body>
