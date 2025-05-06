@@ -113,7 +113,7 @@ main {
 .header-container h1 {
     position: relative;
     z-index: 2;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
     text-align: left;
     color: #000;
@@ -125,7 +125,7 @@ main {
 .presentacion-container {
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 50px;
   height: 265px;
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -205,7 +205,7 @@ main {
 /* Texto al lado de la imagen */
 .novedades-texto {
     flex: 1;
-    margin-down: 10px
+    margin-down: 10px;
 }
 /* ----- ----- */
 /* ---------- Tarjeta: Contenedores de Servicios ---------- */
