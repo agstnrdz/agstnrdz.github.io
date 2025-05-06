@@ -19,10 +19,10 @@
     </header>
 
 <!-- ---------- Presentación 2 ---------- -->
-<div id="presentacionContainer" class="presentacion2-container">
-  <div id="frase" class="presentacion2-text">
+<div id="presentacionContainer" class="presentacion-container">
+  <div id="frase" class="presentacion-text">
     Analista de<br>
-    <span class="presentacion2-burbuja">Sistemas de Información Geográfica</span><br>
+    <span class="presentacion-burbuja">Sistemas de Información Geográfica</span><br>
     en Dirección General de Modernización<br>
     e Investigación Territorial
   </div>
@@ -235,59 +235,6 @@ function cambiarFrase() {
 setInterval(cambiarFrase, 5000);
 </script>
 <!-- ---------- ---------- -->
-<!-- Script para transición -->
-<script>
-const container = document.getElementById("presentacionContainer");
-const fraseEl = document.getElementById("frase");
-
-const frases = [
-  `Analista de<br>
-  <span class="presentacion2-burbuja">Sistemas de Información Geográfica</span><br>
-  en Dirección General de Modernización<br>
-  e Investigación Territorial`,
-
-  `Auxiliar de cátedra en<br>
-  <span class="presentacion2-burbuja">Teledetección II</span><br>
-  (UNPSJB) desde 2023`
-];
-
-let index = 0;
-
-function cambiarFrase() {
-  // Remuevo animaciones previas por si quedó algo
-  container.classList.remove("anim-in", "anim-out");
-
-  // Fuerzo reflow para reiniciar animación
-  void container.offsetWidth;
-
-  // Salida
-  container.classList.add("anim-out");
-
-  setTimeout(() => {
-    index = (index + 1) % frases.length;
-    fraseEl.innerHTML = frases[index];
-
-    // Remuevo animaciones previas y fuerzo reflow
-    container.classList.remove("anim-in", "anim-out");
-    void container.offsetWidth;
-
-    // Entrada
-    container.classList.add("anim-in");
-
-    // Rebote en burbujas nuevas
-    const burbujas = fraseEl.querySelectorAll(".presentacion2-burbuja");
-    burbujas.forEach(el => {
-      el.classList.remove("rebote");
-      void el.offsetWidth;
-      el.classList.add("rebote");
-    });
-
-  }, 500);
-}
-
-setInterval(cambiarFrase, 5000);
-    
-</script>
 
 <!-- ---------- ---------- -->
 </body>
