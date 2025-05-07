@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* color gris base: #f9f9f9; color gris claro: #f0f0f0 */
+    background-color: ##0E0E0E; /* color gris base: #f9f9f9, color gris tarjetas: #fefefe */
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #333;
@@ -29,7 +29,7 @@ main {
 /* ----- // ----- */
 /* -------------------- // Tarjetas // General // -------------------- */
 .card {
-    background-color: #fefefe;
+    background-color: ##141414;
     border-radius: 20px;
     padding: 20px 30px 30px 30px;
     margin: 20px auto;
