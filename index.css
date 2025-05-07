@@ -255,7 +255,7 @@ main {
 }
 /* ----- */
 .service-card:hover { /* Este es el efecto de hover para las tarjetas individuales */
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 /* ----- */
 .service-card img {
