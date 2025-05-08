@@ -264,12 +264,12 @@ main {
   flex: 0 0 300px; /* Fija el ancho */
   flex-direction: column;
   height: 100%; /* Ayuda a que todas tomen la misma altura */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease; /* box-shadow 0.3s ease; */
   padding: 0; /* Que no haya margenes en la imagen */
 }
 /* ----- */
-.service-card:hover { /* Este es el efecto de hover para las tarjetas individuales */
-  transform: translateY(-25px);
+.service-card:hover { /* Este es el efecto de hover vertical ascendente para las tarjetas individuales */
+  transform: translateY(-20px);
 }
 /* ----- */
 .service-card img {
