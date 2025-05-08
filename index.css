@@ -57,7 +57,7 @@ main {
 } */
 
 .card:hover {
-    transform: translateY(-5px); /* Se desplaza hacia arriba */
+    transform: translateY(-10px); /* Se desplaza hacia arriba */
     /* box-shadow: 
         -33px -33px 46px #ffffff,
         23px 23px 54px rgba(13, 39, 80, 0.08); */
