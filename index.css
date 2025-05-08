@@ -14,7 +14,6 @@ body {
     font-size: 4rem;
     font-weight: 600;
     text-align: left;
-    border-radius: 50px;
     color: #000;
     margin: 0;
     padding: 40px;
@@ -52,9 +51,16 @@ main {
     transform: translateY(0);
 }
 /* ----- */
+/* .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35); 
+} */
+
 .card:hover {
     transform: translateY(-5px); /* Se desplaza hacia arriba */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); /* Podria ajustar esto a la mitad */
+    box-shadow: 
+        -33px -33px 46px #ffffff,
+        23px 23px 54px rgba(13, 39, 80, 0.08);
 }
 /* ----- */
 /* ----- // Tarjeta // Encabezado // */
@@ -89,7 +95,7 @@ main {
     right: 0;
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 75px;
     z-index: 0;
 }
 /* ----- */
