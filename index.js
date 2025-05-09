@@ -28,12 +28,44 @@ setInterval(changeHeaderImage, 10000);
 // -----
 // ---------- Animación de entrada suave para las tarjetas ---------- //
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.card, .service-card, presentacion-container, presentacion, presentacion-destacada');
+    const cards = document.querySelectorAll('.card, .service-card, .presentacion-container, .presentacion, .presentacion-destacada');
 
     cards.forEach((card, index) => {
         setTimeout(() => {
             card.classList.add('visible');
         }, index * 200); // Escalonado cada 200ms
     });
+});
+// -----
+// ---------- Scroll arrastrando para tarjetas de servicios ---------- //
+const servicesContainer = document.querySelector('.services-container');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+servicesContainer.addEventListener('mousedown', (e) => {
+  isDown = true;
+  servicesContainer.classList.add('arrastrando');
+  startX = e.pageX - servicesContainer.offsetLeft;
+  scrollLeft = servicesContainer.scrollLeft;
+});
+
+servicesContainer.addEventListener('mouseleave', () => {
+  isDown = false;
+  servicesContainer.classList.remove('arrastrando');
+});
+
+servicesContainer.addEventListener('mouseup', () => {
+  isDown = false;
+  servicesContainer.classList.remove('arrastrando');
+});
+
+servicesContainer.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - servicesContainer.offsetLeft;
+  const walk = (x - startX) * 2; // Ajustá este valor para velocidad
+  servicesContainer.scrollLeft = scrollLeft - walk;
 });
 // -----
