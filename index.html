@@ -104,7 +104,7 @@
 <!-- ----- // ----- -->
 <!-- -------------------- Tarjeta // Servicios -------------------- -->
 <!-- ----- Bloque de servicios 1 ----- -->
-    <div> 
+<div> 
         <div class="services-container">
             <div class="service-card card">
                 <img src="https://agstnrdz.github.io/img/Chubut_img_sat_3.jpg" alt="Imagen2">
@@ -149,7 +149,7 @@
         <p>Nam placerat dui odio, malesuada vulputate ligula hendrerit eu. Proin tincidunt turpis ligula. Mauris vestibulum dapibus nunc ut varius.</p>
         <a href="https://www.comodoro.gov.ar/miciudad/">Learn more →</a>
       </div>
-    </div>
+</div>
 <!-- ----- // ----- -->
 <!-- -------------------- Tarjeta // Actividades y Certificaciones -------------------- -->
     <div> 
@@ -201,39 +201,6 @@
     </main>
 <!-- ----- // ----- -->
 <script src="index.js"></script>
-<!-- ----- // ----- -->
-<!-- Script desplazamiento horizontal arrastrando con el mouse en el contenedor de servicios -->
-<script>
-  const slider = document.querySelector('.services-container');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('arrastrando');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('arrastrando');
-  });
-
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('arrastrando');
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.5; // Velocidad del scroll
-    slider.scrollLeft = scrollLeft - walk;
-  });
-</script>
 <!-- ----- // ----- -->
 <!-- ---------- Script presentación dinámica ---------- -->
 <script>
