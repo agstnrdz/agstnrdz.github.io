@@ -38,34 +38,34 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // -----
 // ---------- Scroll arrastrando para tarjetas de servicios ---------- //
-const servicesContainer = document.querySelector('.services-container');
+document.querySelectorAll('.services-container').forEach(container => {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
 
-let isDown = false;
-let startX;
-let scrollLeft;
+  container.addEventListener('mousedown', (e) => {
+    isDown = true;
+    container.classList.add('arrastrando');
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  });
 
-servicesContainer.addEventListener('mousedown', (e) => {
-  isDown = true;
-  servicesContainer.classList.add('arrastrando');
-  startX = e.pageX - servicesContainer.offsetLeft;
-  scrollLeft = servicesContainer.scrollLeft;
-});
+  container.addEventListener('mouseleave', () => {
+    isDown = false;
+    container.classList.remove('arrastrando');
+  });
 
-servicesContainer.addEventListener('mouseleave', () => {
-  isDown = false;
-  servicesContainer.classList.remove('arrastrando');
-});
+  container.addEventListener('mouseup', () => {
+    isDown = false;
+    container.classList.remove('arrastrando');
+  });
 
-servicesContainer.addEventListener('mouseup', () => {
-  isDown = false;
-  servicesContainer.classList.remove('arrastrando');
-});
-
-servicesContainer.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - servicesContainer.offsetLeft;
-  const walk = (x - startX) * 2; // Ajustá este valor para velocidad
-  servicesContainer.scrollLeft = scrollLeft - walk;
+  container.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2; // Ajustá este valor para velocidad
+    container.scrollLeft = scrollLeft - walk;
+  });
 });
 // -----
