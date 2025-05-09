@@ -224,7 +224,7 @@ main {
   ms-overflow-style: none; /* IE y EDGE */
   scrollbar-width: none; /* Firefox */
   justify-content: flex-start; /* Comienza con el primer contenedor */
-  padding: 20px;
+  padding: 20px 20px 20px 40px; /* Padding-left mayor para prevenir el desborde */
   scroll-behavior: smooth;
   cursor: grab;
 }
