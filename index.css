@@ -229,16 +229,16 @@ main {
   scroll-behavior: smooth;
   cursor: grab;
 }
-/* ----- */
+/* Voy a bloquear esto para probar
 .services-container::before {
   content: "";
   flex: 0 0 10px; /* o el valor que necesites */
-}
-/* ----- */
+
+/* -----
 .services-container::after {
   content: "";
   flex: 0 0 10px;
-}
+} */
 /* ----- */
 .services-container::-webkit-scrollbar {
     height: 4px; /* Tamaño de la barra de scroll */
