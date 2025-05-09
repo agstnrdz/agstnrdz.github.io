@@ -224,9 +224,19 @@ main {
   ms-overflow-style: none; /* IE y EDGE */
   scrollbar-width: none; /* Firefox */
   justify-content: flex-start; /* Comienza con el primer contenedor */
-  padding: 20px 20px 20px 40px; /* Padding-left mayor para prevenir el desborde */
+  padding: 20px;
   scroll-behavior: smooth;
   cursor: grab;
+}
+/* ----- */
+.services-container::before {
+  content: "";
+  flex: 0 0 20px; /* o el valor que necesites */
+}
+/* ----- */
+.services-container::after {
+  content: "";
+  flex: 0 0 20px;
 }
 /* ----- */
 .services-container::-webkit-scrollbar {
