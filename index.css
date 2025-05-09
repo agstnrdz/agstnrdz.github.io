@@ -232,16 +232,16 @@ main {
 /* ----- */
 .services-container::before {
   content: "";
-  flex: 0 0 20px; /* o el valor que necesites */
+  flex: 0 0 10px; /* o el valor que necesites */
 }
 /* ----- */
 .services-container::after {
   content: "";
-  flex: 0 0 20px;
+  flex: 0 0 10px;
 }
 /* ----- */
 .services-container::-webkit-scrollbar {
-    height: 8px; /* Tamaño de la barra de scroll */
+    height: 4px; /* Tamaño de la barra de scroll */
     display: none; /*Chrome, Safari y Opera */
 }
 /* ----- */
