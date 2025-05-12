@@ -221,18 +221,18 @@ main {
 .services-container::after {
   content: "";
   flex: 0 0 10px;
-} */
+}
+-------------------------------------------- prueba
 /* ----- */
-.services-container::-webkit-scrollbar {
-    height: 4px; /* Tamaño de la barra de scroll */
+/* .services-container::-webkit-scrollbar {
+    height: 4px; /* Tamaño de la barra de scroll
     display: none; /*Chrome, Safari y Opera */
-}
 /* ----- */
-.services-container::-webkit-scrollbar-thumb {
+/* .services-container::-webkit-scrollbar-thumb {
     background: #ccc;
-    border-radius: 4px;
-}
+    border-radius: 4px; */
 /* ----- */
+/* --------------------------------------------- prueba */
 .services-container.arrastrando {
   cursor: grabbing;
   cursor: -webkit-grabbing;
