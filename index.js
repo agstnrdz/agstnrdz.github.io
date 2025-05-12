@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // -----
 // ---------- ---------- ---------- // ---------- ---------- ---------- //
 // ---------- Scroll arrastrando para tarjetas de servicios ---------- //
-const slider = document.querySelector('services-scroll');
+const slider = document.getElementById('services-scroll');
 
 let isDown = false;
 let startX;
@@ -68,7 +68,7 @@ slider.addEventListener('mousemove', (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 1.5; // Ajustá el 1.5 para modificar velocidad
+  const walk = (x - startX) * 1.5; // Modificar velocidad
   slider.scrollLeft = scrollLeft - walk;
 });
 // -----
