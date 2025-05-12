@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // -----
 // ---------- ---------- ---------- // ---------- ---------- ---------- //
 // ---------- Scroll arrastrando para tarjetas de servicios ---------- //
-const slider = document.querySelector('services-container');
+const slider = document.querySelector('services-scroll');
 
 let isDown = false;
 let startX;
