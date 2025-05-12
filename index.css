@@ -65,8 +65,8 @@ main {
     height: 100%;
     background: linear-gradient(to right,
                 #e8eae9 0%, /* Gris sólido desde 0% */
-                rgba(232,234,233,0.7) 10%, /* Empieza a desvanecer en 10% */
-                rgba(255, 255, 255, 0) 25%); /* Completamente transparente en 25% dejando limpio el 75% restante */
+                rgba(232,234,233,0.7) 25%, /* Empieza a desvanecer en 10% */
+                rgba(255, 255, 255, 0) 35%); /* Completamente transparente en 25% dejando limpio el 75% restante */
     z-index: 1;
 }
 /* ----- */
