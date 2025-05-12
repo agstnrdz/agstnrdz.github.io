@@ -13,7 +13,7 @@ body {
     z-index: 2;
     font-size: 4rem;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     color: #000;
     margin: 0;
     padding: 40px;
@@ -55,12 +55,9 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35); 
 } */
-
+/* ----- */
 .card:hover {
-    transform: translateY(-10px); /* Se desplaza hacia arriba */
-    /* box-shadow: 
-        -33px -33px 46px #ffffff,
-        23px 23px 54px rgba(13, 39, 80, 0.08); */
+    transform: translateY(-10px); 
 }
 /* ----- */
 /* ----- // Tarjeta // Encabezado // */
