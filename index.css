@@ -65,8 +65,8 @@ main {
     height: 100%;
     background: linear-gradient(to right,
                 #e8eae9 0%,
-                #e8eae9 30%,
-                rgba(232,234,233,0.5) 50%,
+                #e8eae9 40%,
+                rgba(232,234,233,0.7) 60%,
                 rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
