@@ -1,3 +1,4 @@
+// ---------- ---------- ---------- // ---------- ---------- ---------- //
 // ---------- Lista de imágenes para el header ---------- //
 const headerImages = [
   "https://pbs.twimg.com/media/Ggmha1VWEAAGQbH?format=jpg&name=large",
@@ -26,6 +27,7 @@ function changeHeaderImage() {
 // Cambia la imagen cada 10 segundos (10000 milisegundos)
 setInterval(changeHeaderImage, 10000);
 // -----
+// ---------- ---------- ---------- // ---------- ---------- ---------- //
 // ---------- Animación de entrada suave para las tarjetas ---------- //
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll('.card, .service-card, .presentacion-container, .presentacion, .presentacion-destacada');
@@ -37,35 +39,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // -----
+// ---------- ---------- ---------- // ---------- ---------- ---------- //
 // ---------- Scroll arrastrando para tarjetas de servicios ---------- //
-document.querySelectorAll('.services-container').forEach(container => {
-  let isDown = false;
-  let startX;
-  let scrollLeft;
+const slider = document.querySelector('services-container');
 
-  container.addEventListener('mousedown', (e) => {
-    isDown = true;
-    container.classList.add('arrastrando');
-    startX = e.pageX - container.offsetLeft;
-    scrollLeft = container.scrollLeft;
-  });
+let isDown = false;
+let startX;
+let scrollLeft;
 
-  container.addEventListener('mouseleave', () => {
-    isDown = false;
-    container.classList.remove('arrastrando');
-  });
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('arrastrando');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
 
-  container.addEventListener('mouseup', () => {
-    isDown = false;
-    container.classList.remove('arrastrando');
-  });
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('arrastrando');
+});
 
-  container.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX) * 2; // Ajustá este valor para velocidad
-    container.scrollLeft = scrollLeft - walk;
-  });
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('arrastrando');
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 1.5; // Ajustá el 1.5 para modificar velocidad
+  slider.scrollLeft = scrollLeft - walk;
 });
 // -----
