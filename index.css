@@ -64,9 +64,9 @@ main {
     width: 90%;
     height: 100%;
     background: linear-gradient(to right,
-                #e8eae9 0%, /* Gris sólido desde 0% */
-                rgba(232,234,233,0.7) 30%, /* Empieza a desvanecer en 10% */
-                rgba(255, 255, 255, 0) 45%); /* Completamente transparente en 25% dejando limpio el 75% restante */
+                #e8eae9 10%, /* Gris sólido desde 10% */
+                rgba(232,234,233,0.7) 35%, /* Empieza a desvanecer en 30% */
+                rgba(255, 255, 255, 0) 50%); /* Completamente transparente en 50% dejando limpio el 50% restante */
     z-index: 1;
 }
 /* ----- */
