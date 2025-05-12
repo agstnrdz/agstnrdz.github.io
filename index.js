@@ -68,7 +68,8 @@ slider.addEventListener('mousemove', (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 1.5; // Modificar velocidad
+  const walk = (x - startX); // sensibilidad
   slider.scrollLeft = scrollLeft - walk;
 });
+
 // -----
