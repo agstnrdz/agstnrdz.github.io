@@ -205,9 +205,10 @@ main {
 .services-container {
   display: flex;
   flex-direction: row;
+  overflow-x: auto; /* Scroll horizontal */
   gap: 30px;
   flex-wrap: nowrap;
-  overflow-x: auto; /* Scroll horizontal */
+  padding: 20px;
   ms-overflow-style: none; /* IE y EDGE */
   scrollbar-width: none; /* Firefox */
   justify-content: flex-start; /* Comienza con el primer contenedor */
@@ -216,7 +217,7 @@ main {
 }
 /* ----- */
 .services-container::-webkit-scrollbar {
-    height: 4px; /* Tamaño de la barra de scroll */
+    height: 10px; /* Tamaño de la barra de scroll */
     display: none; /*Chrome, Safari y Opera */
 }
 /* ----- */
