@@ -120,7 +120,7 @@ main {
   position: relative;
   overflow: hidden;
   margin-top: 65px;
-  margin-bottom: 20px; /* Prueba */
+  margin-bottom: 5px; /* Prueba */
   height: 265px;
   opacity: 1;
   transition: opacity 0.5s ease;
