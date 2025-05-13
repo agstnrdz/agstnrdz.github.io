@@ -56,7 +56,8 @@ const frases = [
 
   `Auxiliar de cátedra en<br>
   <span class="presentacion-burbuja">Teledetección II</span><br>
-  (UNPSJB) desde 2023`
+  Universidad Nacional de la Patagonia<br>
+  San Juan Bosco desde 2023`
 ];
 
 let index = 0;
