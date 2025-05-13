@@ -220,6 +220,7 @@ main {
   justify-content: flex-start; /* Comienza con el primer contenedor */
   scroll-behavior: smooth;
   cursor: grab;
+  min-width: 100%;
 }
 /* ----- */
 .services-container::-webkit-scrollbar {
