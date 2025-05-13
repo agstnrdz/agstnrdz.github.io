@@ -6,16 +6,18 @@ body {
     font-size: 16px;
     color: #333;
 }
-/* ----- // ----- */
-/* -------------------- Contenedor // Principal -------------------- */
+/* ----- */
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------- Contenedor // Principal -------------------------------- */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
 }
-/* ----- // ----- */
-/* -------------------- // Header // Contenedor // -------------------- */
+/* ----- */
+/* ------------------------------------------------------------------------------------------ */
+/* ----------------------------------- Contenedor // Header --------------------------------- */
 /* ----- // Contenedor padre // ----- */
 .header-container { 
     position: relative;
@@ -70,7 +72,8 @@ main {
     z-index: 1;
 }
 /* ----- */
-/* -------------------- // Tarjetas // General // -------------------- */
+/* ------------------------------------------------------------------------------------------ */
+/* ----------------------------------- Contenedor // General --------------------------------- */
 .card {
     background-color: #e8eae9;
     border-radius: 25px;
@@ -118,7 +121,8 @@ main {
     margin: 0 0 10px 0;
 }
 /* ----- */
-/* -------------------- // Presentación // Contenedor // -------------------- */
+/* ------------------------------------------------------------------------------------------ */
+/* -------------------------------- Contenedor // Presentación ------------------------------- */
 .presentacion-container {
   position: relative;
   overflow: hidden;
@@ -168,8 +172,9 @@ main {
     0 12px 25px rgba(0, 0, 0, 0.25),
     0 0 8px rgba(0, 106, 135, 0.4);
 }
-/* ----- // ----- */
-/* -------------------- // Novedades // Contenedor // -------------------- */
+/* ----- */
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------- Contenedor // Novedades -------------------------------- */
 .novedades-contenido {
     display: flex;
     flex-direction: column;
@@ -200,15 +205,16 @@ main {
     flex: 1;
     margin-down: 10px;
 }
-/* ----- // ----- */
-/* -------------------- // Servicios // Contenedor // -------------------- */
+/* ----- */
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------- Contenedor // Servicios -------------------------------- */
 .services-container {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto; /* Scroll horizontal */
-  gap: 30px;
-  flex-wrap: nowrap;
-  padding: 20px;
+  display: flex; /* Convierte el contenedor en un flexbox */
+  flex-direction: row; /* Los items hijos de acomodan en rows */
+  overflow-x: auto; /* Scroll horizontal cuando el contenido desborda */
+  gap: 30px; /* Deja un espacio entre cada item hijo */
+  flex-wrap: nowrap; /* Evita que los items salten de línea */
+  padding: 20px; /* Relleno interno en todos los lados */
   ms-overflow-style: none; /* IE y EDGE */
   scrollbar-width: none; /* Firefox */
   justify-content: flex-start; /* Comienza con el primer contenedor */
@@ -218,22 +224,12 @@ main {
 /* ----- */
 .services-container::-webkit-scrollbar {
     height: 10px; /* Tamaño de la barra de scroll */
-    display: none; /*Chrome, Safari y Opera */
+    display: none; /* Chrome, Safari y Opera */
 }
 /* ----- */
-.services-container::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-}
-/* ----- */
-/* --------------------------------------------- prueba */
 .services-container.arrastrando {
   cursor: grabbing;
   cursor: -webkit-grabbing;
-}
-/* ----- */
-.services-container {
-  cursor: grab;
 }
 /* ----- */
 .services-container, /* Esto evita seleccionar texto */
@@ -300,8 +296,9 @@ main {
 .service-card a:hover { /* Efecto de subrayado para el service-card a. */
   text-decoration: underline;
 }
-/* ----- // ----- */
-/* -------------------- // Certificados // Contenedor // -------------------- */
+/* ----- */
+/* ------------------------------------------------------------------------------------------ */
+/* -------------------------------- Contenedor // Certificados ------------------------------- */
 .certificados-container {
     display: flex;
     justify-content: center;
@@ -331,4 +328,5 @@ main {
     margin-top: 10px;
     font-size: 1rem;
 }
-/* ----- // ----- */
+/* ----- */
+/* ------------------------------------------------------------------------------------------ */
