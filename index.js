@@ -1,5 +1,6 @@
-// ---------- ---------- ---------- // ---------- ---------- ---------- //
-// ---------- Lista de imágenes para el header ---------- //
+// ----------------------------------------------------------------------------------------------------
+//
+// --------------------------------- Lista de imágenes para el header ---------------------------------
 const headerImages = [
   "https://pbs.twimg.com/media/Ggmha1VWEAAGQbH?format=jpg&name=large",
   "https://agstnrdz.github.io/img/Chubut_img_sat.jpg",
@@ -27,8 +28,9 @@ function changeHeaderImage() {
 // Cambia la imagen cada 10 segundos (10000 milisegundos)
 setInterval(changeHeaderImage, 10000);
 // -----
-// ---------- ---------- ---------- // ---------- ---------- ---------- //
-// ---------- Animación de entrada suave para las tarjetas ---------- //
+// ----------------------------------------------------------------------------------------------------
+//
+// --------------------------- Animación de entrada suave para las tarjetas ---------------------------
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll('.card, .service-card, .presentacion-container, .presentacion, .presentacion-destacada');
 
@@ -39,4 +41,77 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // -----
-// ---------- ---------- ---------- // ---------- ---------- ---------- //
+// ----------------------------------------------------------------------------------------------------
+//
+// ----------------------------------- Scripts presentación dinámica -----------------------------------
+const container = document.getElementById("presentacionContainer");
+const fraseEl = document.getElementById("frase");
+
+const frases = [
+  `Analista de<br>
+  <span class="presentacion-burbuja">Sistemas de Información Geográfica</span><br>
+  en Dirección General de Modernización<br>
+  e Investigación Territorial`,
+
+  `Auxiliar de cátedra en<br>
+  <span class="presentacion-burbuja">Teledetección II</span><br>
+  (UNPSJB) desde 2023`
+];
+
+let index = 0;
+
+function cambiarFrase() {
+  container.classList.add("ocultar");
+
+  setTimeout(() => {
+    index = (index + 1) % frases.length;
+    fraseEl.innerHTML = frases[index];
+
+    // Rebote a burbujas nuevas
+    const burbujas = fraseEl.querySelectorAll(".presentacion-burbuja");
+    burbujas.forEach(el => {
+      el.classList.remove("rebote");
+      void el.offsetWidth;
+      el.classList.add("rebote");
+    });
+
+    container.classList.remove("ocultar");
+  }, 500);
+}
+
+setInterval(cambiarFrase, 5000);
+// -----
+// ----------------------------------------------------------------------------------------------------
+//
+// --------------------------- Scroll arrastrando para tarjetas de servicios --------------------------
+const slider = document.getElementById('services-scroll');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('arrastrando');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('arrastrando');
+});
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('arrastrando');
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX); // sensibilidad
+  slider.scrollLeft = scrollLeft - walk;
+});
+// -----
