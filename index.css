@@ -212,15 +212,14 @@ main {
   display: flex; /* Convierte el contenedor en un flexbox */
   flex-direction: row; /* Los items hijos de acomodan en rows */
   overflow-x: auto; /* Scroll horizontal cuando el contenido desborda */
-  gap: 30px; /* Deja un espacio entre cada item hijo */
+  gap: 20px; /* Deja un espacio entre cada item hijo */
   flex-wrap: nowrap; /* Evita que los items salten de línea */
-  padding: 20px; /* Relleno interno en todos los lados */
+  padding: 15px; /* Relleno interno en todos los lados */
   ms-overflow-style: none; /* IE y EDGE */
   scrollbar-width: none; /* Firefox */
   justify-content: flex-start; /* Comienza con el primer contenedor */
   scroll-behavior: smooth;
   cursor: grab;
-  min-width: 100%;
 }
 /* ----- */
 .services-container::-webkit-scrollbar {
