@@ -208,6 +208,13 @@ main {
 /* ----- */
 /* ------------------------------------------------------------------------------------------ */
 /* ---------------------------------- Contenedor // Servicios -------------------------------- */
+.services-wrapper {
+    width: 100%;
+    padding: 0 15px; /* Margen lateral */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Ver... */
+}
+
 .services-container {
   display: flex; /* Convierte el contenedor en un flexbox */
   flex-direction: row; /* Los items hijos de acomodan en rows */
@@ -223,23 +230,23 @@ main {
   max-width: 100vw;
   box-sizing: border-box;
 }
-/* ----- */
+
 .services-container::-webkit-scrollbar {
     height: 10px; /* Tamaño de la barra de scroll */
     display: none; /* Chrome, Safari y Opera */
 }
-/* ----- */
+
 .services-container.arrastrando {
   cursor: grabbing;
   cursor: -webkit-grabbing;
 }
-/* ----- */
+
 .services-container, /* Esto evita seleccionar texto */
 .services-container * {
   user-select: none;
   -webkit-user-drag: none;
 }
-/* ----- */
+
 .service-card {
   background: #fff;
   border-radius: 15px;
@@ -254,11 +261,11 @@ main {
   transition: transform 0.3s ease; /* box-shadow 0.3s ease; */
   padding: 0; /* Que no haya margenes en la imagen */
 }
-/* ----- */
+
 .service-card:hover { /* Este es el efecto de hover vertical ascendente para las tarjetas individuales */
   transform: translateY(-20px);
 }
-/* ----- */
+
 .service-card img {
   width: 100%;
   height: 200px;
@@ -267,7 +274,7 @@ main {
   border-top-right-radius: 15px;
   margin: 0;
 }
-/* ----- */
+
 .service-type {
   font-size: 16px;
   color: #0077c2;
@@ -275,30 +282,30 @@ main {
   margin: 16px;
   font-weight: 600;
 }
-/* ----- */
+
 .service-card h3 {
   font-size: 24px;
   margin: 0 16px;
 }
-/* ----- */
+
 .service-card p { /* Este es el ajuste para service-card p */
   font-size: 16px;
   margin: 8px 16px;
   color: #333;
   flex-grow: 1; /* Hace que el párrafo ocupe el espacio disponible y empuje el link hacia abajo */
 }
-/* ----- */
+
 .service-card a { /* Ajuste para service-card a (Learn more hipervinculado) */
   margin: 16px;
   font-weight: normal;
   color: #0077c2;
   text-decoration: none;
 }
-/* ----- */
+
 .service-card a:hover { /* Efecto de subrayado para el service-card a. */
   text-decoration: underline;
 }
-/* ----- */
+
 /* ------------------------------------------------------------------------------------------ */
 /* -------------------------------- Contenedor // Certificados ------------------------------- */
 .certificados-container {
