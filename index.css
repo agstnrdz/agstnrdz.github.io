@@ -219,7 +219,7 @@ main {
   display: flex; /* Convierte el contenedor en un flexbox */
   flex-direction: row; /* Los items hijos de acomodan en rows */
   overflow-x: auto; /* Scroll horizontal cuando el contenido desborda */
-  gap: 20px; /* Deja un espacio entre cada item hijo */
+  gap: 25px; /* Deja un espacio entre cada item hijo */
   flex-wrap: nowrap; /* Evita que los items salten de línea */
   padding: 15px; /* Relleno interno en todos los lados */
   ms-overflow-style: none; /* IE y EDGE */
