@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba de Gráfico</title>
+</head>
+<body>
+  <h1>Gráfico de Torta con Chart.js</h1>
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Rojo', 'Azul', 'Amarillo'],
+        datasets: [{
+          data: [12, 19, 3],
+          backgroundColor: ['#f44336', '#2196f3', '#ffeb3b']
+        }]
+      },
+    });
+  </script>
+</body>
+</html>
