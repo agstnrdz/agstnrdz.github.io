@@ -3,7 +3,7 @@
 Completar un taller introductorio (y registrarlo en un repositorio) sobre el funcionamiento de PostgreSQL y sus conexiones con QGIS para importar datos espaciales. [Tutorial](https://johagis.com/importacion-masiva-postgis) sobre cómo importar datos a PostGIS. Curso más completo [aquí](https://johagis.com/curso-postgresql-postgis-para-aplicaciones-gis)(Joha GIS).
 
 ## Google Colab
-Introducción a Google Colab para programar con Python usando Jupyter Notebook en los servidores de Google. Video introductorio[aquí.](https://www.youtube.com/watch?v=8VFYs3Ot_aA)
+Introducción a Google Colab para programar con Python usando Jupyter Notebook en los servidores de Google. Video introductorio [aquí.](https://www.youtube.com/watch?v=8VFYs3Ot_aA)
 
 ## Google Earth Engine
 Introducción a Google Earth Engine usando JavaScript y la ImageCollection disponible. Filtrar datos, calcular con imágenes y mapear utilizando funciones. Serie de videos introductorios de [Program Sam](https://www.youtube.com/@ProgramSam) [aquí.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs) Finalizada con éxito la práctica del taller, probar la publicación de visualizadores.
