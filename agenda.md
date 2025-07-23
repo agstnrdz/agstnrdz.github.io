@@ -1,4 +1,5 @@
 # Agenda de tareas
+# Cartera de actividades
 ## PostgreSQL + PostGIS + QGIS
 Completar un taller introductorio (y registrarlo en un repositorio) sobre el funcionamiento de PostgreSQL y sus conexiones con QGIS para importar datos espaciales. [Tutorial](https://johagis.com/importacion-masiva-postgis) sobre cómo importar datos a PostGIS. Curso más completo [aquí](https://johagis.com/curso-postgresql-postgis-para-aplicaciones-gis) (Joha GIS).
 
