@@ -19,4 +19,4 @@ Capacitación hacia IDE. GeoNode como gestor de contenidos geoespaciales y plata
 Capacitación hacia IDE. GeoServer como servidor que facilita la publicación y edición de datos espaciales en la web. Artículo Geoserver para novatos [aquí.](https://mappinggis.com/2022/06/geoserver-para-novatos/)
 
 ## Diseño web con Wordpress
-Edición de Wordpress usando como antecedente .htmnl y .css. Inserción de visualizadores web y botones interactivos.
+Edición de Wordpress usando como antecedente .html y .css. Inserción de visualizadores web y botones interactivos.
