@@ -1,5 +1,5 @@
 # Agenda de actividades
-### En cada temática hay un resumen, referencias, avances y pendientes.
+#### En cada temática hay un resumen, referencias, avances y pendientes.
 ## PostgreSQL + PostGIS + QGIS
 Completar un taller introductorio (y registrarlo en un repositorio) sobre el funcionamiento de PostgreSQL y sus conexiones con QGIS para importar datos espaciales. [Tutorial](https://johagis.com/importacion-masiva-postgis) sobre cómo importar datos a PostGIS. Curso más completo [aquí](https://johagis.com/curso-postgresql-postgis-para-aplicaciones-gis) (Joha GIS).
 
@@ -22,5 +22,5 @@ Capacitación hacia IDE. GeoServer como servidor que facilita la publicación y 
 Edición de Wordpress usando como antecedente .html y .css. Inserción de visualizadores web y botones interactivos.
 
 ## Miscelánea
-* Herramientas para crear un mapa web interactivo. Mapping GIS. [Visitar](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
-* Leaflet + React: publicando mapas interactivos en la web. [Visitar](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
+* Herramientas para crear un mapa web interactivo. Mapping GIS. [Pendiente](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
+* Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
