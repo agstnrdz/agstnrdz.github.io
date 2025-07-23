@@ -3,9 +3,11 @@
 Completar un taller introductorio (y registrarlo en un repositorio) sobre el funcionamiento de PostgreSQL y sus conexiones con QGIS para importar datos espaciales.
 
 Referencias: [Tutorial](https://johagis.com/importacion-masiva-postgis) sobre cómo importar datos a PostGIS. Curso más completo [aquí.](https://johagis.com/curso-postgresql-postgis-para-aplicaciones-gis)(Joha GIS)
+
 Completado: 
 * Ejemplo 1
 * Ejemplo 2
+
 Pendiente:
 * Ejemplo 3
 * Ejemplo 4
