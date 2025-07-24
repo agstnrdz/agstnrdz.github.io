@@ -21,6 +21,9 @@ Capacitación hacia IDE. GeoServer como servidor que facilita la publicación y 
 ## Diseño web con Wordpress
 Edición de Wordpress usando como antecedente .html y .css. Inserción de visualizadores web y botones interactivos.
 
+## Global Human Settlement Layer
+Conocer el funcionamiento del proceso de Global Human Settlement Layer (Comisión Europea, Copernicus) y su descarga e integración a visualizadores Google Earth Engine Apps. [Ejemplo](https://google.earthengine.app/view/population-explorer)
+
 ## Miscelánea
 * Herramientas para crear un mapa web interactivo. Mapping GIS. [Pendiente](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
 * Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
