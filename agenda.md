@@ -1,7 +1,9 @@
 # Agenda de actividades
 #### En cada temática hay un resumen, referencias, avances y pendientes.
 ## PostgreSQL + PostGIS + QGIS
-Completar un taller introductorio (y registrarlo en un repositorio) sobre el funcionamiento de PostgreSQL y sus conexiones con QGIS para importar datos espaciales. [Tutorial](https://johagis.com/importacion-masiva-postgis) sobre cómo importar datos a PostGIS. Curso más completo [aquí](https://johagis.com/curso-postgresql-postgis-para-aplicaciones-gis) (Joha GIS).
+Completar talleres introductorio (y registrar desarrollos en un repositorio) sobre el funcionamiento de PostgreSQL y sus conexiones con QGIS para importar datos espaciales. [Tutorial](https://johagis.com/importacion-masiva-postgis) sobre cómo importar datos a PostGIS. Curso más completo [aquí](https://johagis.com/curso-postgresql-postgis-para-aplicaciones-gis) (Joha GIS).
+
+[Serie de videos](https://www.youtube.com/playlist?list=PL_YyCdnLDJAjD4sfB3z2p_MOcleKUCVwy) formato taller sobre PostGIS - Extensión de PostgreSQL para trabajar con bases de datos espaciales (Juan Manuel Suárez).
 
 ## Google Colab
 Introducción a Google Colab para programar con Python usando Jupyter Notebook en los servidores de Google. Guía introductoria [aquí.](https://www.youtube.com/watch?v=8VFYs3Ot_aA)
