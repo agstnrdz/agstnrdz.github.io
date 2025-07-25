@@ -20,6 +20,13 @@ Capacitación hacia IDE. GeoNode como gestor de contenidos geoespaciales y plata
 ## GeoServer
 Capacitación hacia IDE. GeoServer como servidor que facilita la publicación y edición de datos espaciales en la web. Artículo Geoserver para novatos [aquí.](https://mappinggis.com/2022/06/geoserver-para-novatos/)
 
+## Infraestructura de Datos Espaciales
+* PostgreSQL + PostGIS: Base de datos espacial que almacena geometrías y atributos.
+* GeoServer: Se conecta a PostgreSQL/PostGIS como fuente de datos. Lee las tablas espaciales y las transforma en servicios estándar (WMS, WFS, WCs). Genera los mapas y responde las consultas.
+* Geovisor IDE: Consume los servicios WMS, WFS de GeoServer. Muestra los mapas al usuario final.
+* GeoNetwork: Cataloga georreferenciados, accede a los metadatos.
+* GeoNode: Plataforma integral (datos, documentos, interfaz, atlas).
+
 ## Diseño web con Wordpress
 Edición de Wordpress usando como antecedente .html y .css. Inserción de visualizadores web y botones interactivos.
 
