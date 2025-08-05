@@ -36,3 +36,6 @@ Conocer el funcionamiento del proceso de Global Human Settlement Layer (Comisió
 ## Miscelánea
 * Herramientas para crear un mapa web interactivo. Mapping GIS. [Pendiente](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
 * Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
+
+## Índice 1 - PostgreSQL + PostGIS
+Consultas y visualización de tablas con datos espaciales. Carga de archivos shape mediante SHP2PGSQL (PostGIS Shapefile Import/Export Manager), conexión a la base de datos e importación de archivos en directorio.
