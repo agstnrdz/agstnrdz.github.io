@@ -38,4 +38,4 @@ Conocer el funcionamiento del proceso de Global Human Settlement Layer (Comisió
 * Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
 
 ## Índice 1 - PostgreSQL + PostGIS
-Consultas y visualización de tablas con datos espaciales. Carga de archivos shape mediante SHP2PGSQL (PostGIS Shapefile Import/Export Manager), conexión a la base de datos e importación de archivos en directorio. Carga de archivos usando Data Base Manager de QGIS.
+Consultas y visualización de tablas con datos espaciales. Carga de archivos shape mediante SHP2PGSQL (PostGIS Shapefile Import/Export Manager), conexión a la base de datos e importación de archivos en directorio. Carga de archivos usando Data Base Manager de QGIS. Funciones, creación de índices espaciales para cada tabla. Consultas de área y relaciones espaciales (ST_Transform, ST_Area, ST_Contains).
