@@ -5,7 +5,7 @@ Completar talleres introductorio (y registrar desarrollos en un repositorio) sob
 
 [Serie de videos](https://www.youtube.com/playlist?list=PL_YyCdnLDJAjD4sfB3z2p_MOcleKUCVwy) formato taller sobre PostGIS - Extensión de PostgreSQL para trabajar con bases de datos espaciales (Juan Manuel Suárez).
 
-## Google Colab
+## Google Colaboratory
 Introducción a Google Colab para programar con Python usando Jupyter Notebook en los servidores de Google. Guía introductoria [aquí.](https://www.youtube.com/watch?v=8VFYs3Ot_aA)
 
 ## Google Earth Engine
