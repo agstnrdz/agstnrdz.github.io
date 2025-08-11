@@ -2,13 +2,17 @@
 //
 // --------------------------------- Lista de imágenes para el header ---------------------------------
 const headerImages = [
-  "https://pbs.twimg.com/media/Ggmha1VWEAAGQbH?format=jpg&name=large",
   "https://agstnrdz.github.io/img/Chubut_img_sat.jpg",
-  "https://agstnrdz.github.io/img/Maserati_1958_header.png",
   "https://agstnrdz.github.io/img/Chubut_img_sat_3.jpg"
 ];
-// ----- imagen SAT extra: "https://media.licdn.com/dms/image/v2/D4E16AQEE0cx3afJ25A/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1732057416417?e=1752710400&v=beta&t=FOP1dqBTyWNgWyi6qox_LVXS60VmpKV5j4o_im2KRIg"
+
+// ----- Imágenes poco serias
+"https://pbs.twimg.com/media/Ggmha1VWEAAGQbH?format=jpg&name=large" (Ajedrez)
+"https://agstnrdz.github.io/img/Maserati_1958_header.png" (Maserati)
+"https://media.licdn.com/dms/image/v2/D4E16AQEE0cx3afJ25A/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1732057416417?e=1752710400&v=beta&t=FOP1dqBTyWNgWyi6qox_LVXS60VmpKV5j4o_im2KRIg"
+(Imagen SAT extra...)
 // -----
+
 // Selecciono el elemento img del header
 const headerImg = document.querySelector(".header-image img");
 
@@ -117,3 +121,4 @@ slider.addEventListener('mousemove', (e) => {
   slider.scrollLeft = scrollLeft - walk;
 });
 // -----
+
