@@ -3,8 +3,6 @@
 // --------------------------------- Lista de imágenes para el header ---------------------------------
 const headerImages = [
   "https://agstnrdz.github.io/img/Chubut_img_sat.jpg",
-  "https://agstnrdz.github.io/img/Chubut_img_sat_3.jpg",
-  "https://agstnrdz.github.io/img/Chubut_img_sat.jpg",
   "https://agstnrdz.github.io/img/Chubut_img_sat_3.jpg"
 ];
 
@@ -116,6 +114,7 @@ slider.addEventListener('mousemove', (e) => {
   slider.scrollLeft = scrollLeft - walk;
 });
 // -----
+
 
 
 
