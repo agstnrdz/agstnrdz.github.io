@@ -173,6 +173,203 @@ main {
     0 0 8px rgba(0, 106, 135, 0.4);
 }
 /* ----- */
+/* --------------------------------------------------------------------------------------------------- */
+/* ----------------------------------- Contenedor // Perfil Personal --------------------------------- */
+        .perfil-personal {
+            position: relative;
+            margin: 40px auto 30px auto;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background-color: #e8eae9;
+            border-radius: 25px;
+            box-shadow: 
+                inset -23px -23px 40px #FFFFFF,
+                inset 23px 23px 54px rgba(13, 39, 80, 0.04),
+                -31px -31px 43px #FFFFFF,
+                 8px 8px 10px rgba(13, 39, 80, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.8s ease, transform 0.8s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .perfil-personal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .perfil-personal:hover {
+            transform: translateY(-5px);
+        }
+
+/* ----- Imagen de perfil ----- */
+        .perfil-imagen {
+            margin-bottom: 25px;
+        }
+
+        .perfil-imagen img {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .perfil-imagen img:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 
+                0 15px 35px rgba(0, 0, 0, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(0, 106, 135, 0.2);
+        }
+
+/* ----- Botones sociales ----- */
+        .botones-sociales {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .boton-social {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            background: linear-gradient(145deg, #f0f2f1, #d8dad9);
+            color: #006A87;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 
+                inset -5px -5px 10px #FFFFFF,
+                inset 5px 5px 10px rgba(13, 39, 80, 0.08),
+                -8px -8px 15px #FFFFFF,
+                5px 5px 10px rgba(13, 39, 80, 0.06);
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .boton-social:hover {
+            transform: translateY(-3px);
+            color: #004d66;
+            background: linear-gradient(145deg, #ffffff, #e8eae9);
+            box-shadow: 
+                inset -8px -8px 15px #FFFFFF,
+                inset 8px 8px 15px rgba(13, 39, 80, 0.12),
+                -12px -12px 20px #FFFFFF,
+                8px 8px 15px rgba(13, 39, 80, 0.1);
+        }
+
+        .boton-social:active {
+            transform: translateY(-1px);
+            box-shadow: 
+                inset -3px -3px 6px #FFFFFF,
+                inset 3px 3px 6px rgba(13, 39, 80, 0.15),
+                -5px -5px 10px #FFFFFF,
+                3px 3px 8px rgba(13, 39, 80, 0.08);
+        }
+
+/* ----- Colores específicos por plataforma ----- */
+        .boton-linkedin:hover {
+            background: linear-gradient(145deg, #e3f2fd, #bbdefb);
+            color: #0077b5;
+        }
+
+        .boton-github:hover {
+            background: linear-gradient(145deg, #f5f5f5, #eeeeee);
+            color: #333;
+        }
+
+        .boton-researchgate:hover {
+            background: linear-gradient(145deg, #e8f5e8, #c8e6c9);
+            color: #00d4aa;
+        }
+
+/* ----- Responsive para tablets ----- */
+        @media screen and (max-width: 768px) {
+            .perfil-personal {
+                margin: 30px 20px 25px 20px;
+                padding: 25px 20px;
+            }
+
+            .perfil-imagen img {
+                width: 100px;
+                height: 100px;
+                border-radius: 18px;
+            }
+
+            .botones-sociales {
+                gap: 12px;
+            }
+
+            .boton-social {
+                padding: 10px 16px;
+                font-size: 13px;
+                min-width: 110px;
+                border-radius: 12px;
+            }
+        }
+
+/* ----- Responsive para móviles ----- */
+        @media screen and (max-width: 480px) {
+            .perfil-personal {
+                margin: 20px 15px;
+                padding: 20px 15px;
+                border-radius: 20px;
+            }
+
+            .perfil-imagen {
+                margin-bottom: 20px;
+            }
+
+            .perfil-imagen img {
+                width: 85px;
+                height: 85px;
+                border-radius: 15px;
+            }
+
+            .botones-sociales {
+                gap: 10px;
+                flex-direction: column;
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .boton-social {
+                padding: 12px 20px;
+                font-size: 14px;
+                width: 100%;
+                min-width: auto;
+                justify-content: center;
+            }
+
+            /* Desactivar hover en móviles */
+            .perfil-personal:hover {
+                transform: none;
+            }
+
+            .perfil-imagen img:hover {
+                transform: scale(1.02);
+            }
+
+            .boton-social:hover {
+                transform: none;
+                background: linear-gradient(145deg, #f0f2f1, #d8dad9);
+                color: #006A87;
+                box-shadow: 
+                    inset -5px -5px 10px #FFFFFF,
+                    inset 5px 5px 10px rgba(13, 39, 80, 0.08),
+                    -8px -8px 15px #FFFFFF,
+                    5px 5px 10px rgba(13, 39, 80, 0.06);
+            }
+        }
 /* ------------------------------------------------------------------------------------------ */
 /* ---------------------------------- Contenedor // Novedades -------------------------------- */
 .novedades-contenido {
@@ -693,3 +890,4 @@ body {
     }
 }
 /* ------------------------------------------------------------------------------------------ */
+
