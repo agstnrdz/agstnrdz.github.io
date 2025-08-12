@@ -33,6 +33,9 @@ Edición de Wordpress usando como antecedente .html y .css. Inserción de visual
 ## Global Human Settlement Layer
 Conocer el funcionamiento del proceso de Global Human Settlement Layer (Comisión Europea, Copernicus) y su descarga e integración a visualizadores Google Earth Engine Apps. [Ejemplo](https://google.earthengine.app/view/population-explorer)
 
+## Matt Forrest
+Plataforma de aprendizaje vía [videos](https://www.youtube.com/@MattForrest/videos) informativos y formato taller y también [sitio web](https://moderngis.xyz/) con cursos y noticias. Existe una [certificación](https://moderngis.xyz/courses/qgis-free-youtube-certification/) gratis de QGIS y una [certificación](https://moderngis.xyz/courses/geopandas-free-certification/) gratis de Geopandas.
+
 ## Miscelánea
 * Herramientas para crear un mapa web interactivo. Mapping GIS. [Pendiente](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
 * Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
