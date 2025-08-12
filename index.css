@@ -131,17 +131,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    background-color: #e8eae9;
-    border-radius: 25px;
-    box-shadow: 
-        inset -23px -23px 40px #FFFFFF,
-        inset 23px 23px 54px rgba(13, 39, 80, 0.04),
-        -31px -31px 43px #FFFFFF,
-         8px 8px 10px rgba(13, 39, 80, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.8s ease, transform 0.8s ease;
-    opacity: 0;
-    transform: translateY(20px);
+    padding: 0px; /* Importante para eliminar la tarjeta */
+    background: none; /* Importante para eliminar la tarjeta */
+    border: none; /* Importante para eliminar la tarjeta */
+    box-shadow: none;
 }
 
 .perfil-personal.visible {
@@ -159,9 +152,9 @@ main {
 }
 
 .perfil-imagen img {
-    width: 180px;
-    height: 180px;
-    border-radius: 55px;
+    width: 200px;
+    height: 200px;
+    border-radius: 75px;
     object-fit: cover;
     box-shadow: 
         0 8px 25px rgba(0, 0, 0, 0.15),
@@ -891,6 +884,7 @@ body {
     }
 }
 /* ------------------------------------------------------------------------------------------ */
+
 
 
 
