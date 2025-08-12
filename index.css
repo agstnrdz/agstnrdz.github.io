@@ -158,9 +158,9 @@ main {
         }
 
         .perfil-imagen img {
-            width: 240px;
-            height: 240px;
-            border-radius: 25px;
+            width: 180px;
+            height: 180px;
+            border-radius: 45px;
             object-fit: cover;
             box-shadow: 
                 0 8px 25px rgba(0, 0, 0, 0.15),
@@ -890,5 +890,6 @@ body {
     }
 }
 /* ------------------------------------------------------------------------------------------ */
+
 
 
