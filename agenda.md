@@ -36,6 +36,9 @@ Conocer el funcionamiento del proceso de Global Human Settlement Layer (Comisió
 ## Matt Forrest
 Plataforma de aprendizaje vía [videos](https://www.youtube.com/@MattForrest/videos) informativos y formato taller y también sitio web con [cursos](https://moderngis.xyz/) y [noticias](https://forrest.nyc/). Existe una [certificación](https://moderngis.xyz/courses/qgis-free-youtube-certification/) gratis de QGIS y una [certificación](https://moderngis.xyz/courses/geopandas-free-certification/) gratis de Geopandas.
 
+## MapTiler
+Diseño y edición de mapas base vectoriales usando [MapTiler](https://cloud.maptiler.com/auth/widget?next=https://cloud.maptiler.com/maps/). Ejemplo de uso en Python mediante Google Colab [aquí](https://colab.research.google.com/drive/1RsXvJJgbwI_ACeMDCl1Y8TtPfVtAuafp#scrollTo=UbdcBzPaJp1H).
+
 ## Miscelánea
 * Herramientas para crear un mapa web interactivo. Mapping GIS. [Pendiente](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
 * Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
