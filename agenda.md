@@ -39,6 +39,7 @@ Plataforma de aprendizaje vía [videos](https://www.youtube.com/@MattForrest/vid
 ## Miscelánea
 * Herramientas para crear un mapa web interactivo. Mapping GIS. [Pendiente](https://mappinggis.com/2024/05/herramientas-crear-mapa-web-interactivo/)
 * Leaflet + React: publicando mapas interactivos en la web. [Pendiente](https://mappinggis.com/2024/01/leaflet-react-publicar-mapas-interactivos-en-la-web/)
+* Modificación de leyenda en QGIS (archivo oficial a descargar) [Pendiente](https://github.com/geografope/personalizacion-de-leyenda-en-qgis)
 
 ## Índice 1 - PostgreSQL + PostGIS
 Consultas y visualización de tablas con datos espaciales. Carga de archivos shape mediante SHP2PGSQL (PostGIS Shapefile Import/Export Manager), conexión a la base de datos e importación de archivos en directorio. Carga de archivos usando Data Base Manager de QGIS. Funciones, creación de índices espaciales para cada tabla. Consultas de área y relaciones espaciales (ST_Transform, ST_Area, ST_Contains, ST_Intersects, ST_Union). Consulta final para obtener los radios censales con datos de población que cumplen con los condicionantes de no intersectar con el buffer de 500 m de centros de salud y tener entre 0,5 y 1 km2 de área:
