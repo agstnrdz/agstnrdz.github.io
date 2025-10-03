@@ -52,9 +52,9 @@ FROM buffer_c_salud_500, radios_calc
 WHERE ST_Intersects(buffer_c_salud_500.geom, radios_calc.geom) = FALSE
 ```
 ## Visualizadores
+* [Barrios](https://www.comodoro.gov.ar/miciudad/inicio-2/relevamiento-de-barrios-de-la-ciudad/)
 * [Infraestructura de salud pública](https://agstnrdz.github.io/salud-publica/mapa.html/)
 * [Centros de jubilados](https://agstnrdz.github.io/centros-jubilados/mapa.html/)
 * [Obras públicas](https://agstnrdz.github.io/obras/mapa.html/)
 * [Productores de la agricultura familiar](https://agstnrdz.github.io/prod-rurales/suspendido.html/)
-* [Barrios](https://www.comodoro.gov.ar/miciudad/inicio-2/relevamiento-de-barrios-de-la-ciudad/)
 
