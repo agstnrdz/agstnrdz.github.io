@@ -247,7 +247,7 @@ body {
   gap: 0.2rem;
 }
 
-.entry-cert-thumb { */ tamaño de certificado */
+.entry-cert-thumb {
   flex-shrink: 0;
   display: block;
   width: 150px;
