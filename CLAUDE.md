@@ -14,9 +14,9 @@ portfolio/
 ├── DESIGN_SYSTEM.md      ← referencia completa del sistema de diseño
 ├── assets/
 │   ├── certificados/     ← imágenes de certificados (YYYY_cert_*.jpg)
+│   ├── icons/            ← íconos SVG de herramientas (icon-*.svg)
 │   └── img/
 │       ├── fotoperfil.jpg
-│       ├── icons/        ← íconos SVG de herramientas (icon-*.svg)
 │       └── [mapas, fotos de proyectos]
 ```
 
@@ -107,7 +107,7 @@ Agregar clase `.animable` a cualquier elemento. El JS con `IntersectionObserver`
 ## Convenciones de archivos
 
 - **Certificados:** `YYYY_cert_[tipo]_[descripcion].jpg` — sin espacios, sin tildes en el nombre de archivo.
-- **Íconos SVG:** `assets/img/icons/icon-[herramienta].svg`
+- **Íconos SVG:** `assets/icons/icon-[herramienta].svg`
 - **Imágenes generales:** `assets/img/[nombre].jpg|png`
 - Todas las rutas en HTML son **relativas** (nunca URLs absolutas a `agstnrdz.github.io`).
 
