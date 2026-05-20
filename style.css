@@ -325,6 +325,9 @@ body {
 .chip-rojo      { background: #f8d7da; color: #721c24; }
 .chip-gris      { background: #e2e3e5; color: #383d41; }
 .chip-amarillo  { background: #e5e0af; color: #848046; }
+.chip-morado    { background: #e6cdf1; color: #746b79; }
+.chip-rosa      { background: #f9d6ff; color: #796274; }
+
 
 /* ── Animaciones de entrada ── */
 .animable {
