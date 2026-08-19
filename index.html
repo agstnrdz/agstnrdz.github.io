@@ -4,21 +4,10 @@
 
   <script>
     (function () {
-      // Light mode
       if (localStorage.getItem('theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
       }
     })();
-  </script>
-
-  <!-- G-tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WY5DS3XF3W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-WY5DS3XF3W');
   </script>
 
   <meta charset="UTF-8">
@@ -27,25 +16,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="visor_2.css">
 
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
   <div class="page-wrapper">
 
-    <!-- Left column -->
     <aside class="sidebar animable">
 
       <h1 class="sidebar-name">Agustín Alejandro Rodríguez</h1>
 
       <div class="sidebar-photo-wrap">
-        <img src="assets/img/perfil.jpeg" alt="Foto de perfil" class="sidebar-photo">
+        <img src="../assets/img/perfil.jpeg" alt="Foto de perfil" class="sidebar-photo">
       </div>
 
       <p class="sidebar-role">Analista de Sistemas de Información Geográfica</p>
@@ -57,32 +41,29 @@
         Argentina
       </p>
 
-      <!-- Contact -->
       <nav class="sidebar-links">
-        <a href="mailto:agstnrodriguez@gmail.com" class="sidebar-link" data-contact="Contacto">
+        <a href="mailto:agstnrodriguez@gmail.com" class="sidebar-link">
           <span class="material-symbols-outlined">mail</span>
           Contacto
         </a>
-        <a href="https://www.linkedin.com/in/agstnrodriguez" target="_blank" class="sidebar-link" data-contact="LinkedIn">
+        <a href="https://www.linkedin.com/in/agstnrodriguez" target="_blank" class="sidebar-link">
           <span class="material-symbols-outlined">mail</span>
           LinkedIn
         </a>
-        <a href="https://github.com/agstnrdz" target="_blank" class="sidebar-link" data-contact="GitHub">
+        <a href="https://github.com/agstnrdz" target="_blank" class="sidebar-link">
           <span class="material-symbols-outlined">mail</span>
           GitHub
-        </a><a href="https://www.researchgate.net/profile/Agustin-Rodriguez-27" target="_blank" class="sidebar-link" data-contact="ResearchGate">
+        </a>
+        <a href="https://www.researchgate.net/profile/Agustin-Rodriguez-27" target="_blank" class="sidebar-link">
           <span class="material-symbols-outlined">mail</span>
           ResearchGate
         </a>
-        
       </nav>
 
     </aside>
 
-    <!-- Right column -->
     <main class="content">
 
-      <!-- Section: Sobre mí -->
       <section class="card animable">
         <h2 class="section-title">
           <span class="material-symbols-outlined section-icon">person</span>
@@ -91,34 +72,36 @@
             <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
           </button>
         </h2>
-        <p class="sobre-mi-desc">Soy responsable jerárquico del área de Geoestadísticas en la Dirección General de Modernización e Investigación Territorial de la ciudad de Comodoro Rivadavia. Resuelvo problemas desarrollando flujos de trabajo para la creación, normalización, actualización y gestión de información espacial. Coordino programas y tareas interdisciplinarias y me gusta capacitarme constantemente en tecnologías como Python (geopandas, matplotlib, scikit-learn), R, PostgreSQL con PostGIS, Google Earth Engine Code, IA, indexación H3, modelos de procesamiento y todo lo relacionado a geomática. También soy auxiliar docente en la materia Teledetección II en la Universidad Nacional de la Patagonia San Juan Bosco desde el año 2023.</p>
-        
+        <p class="sobre-mi-desc">Soy responsable jerárquico del área de Geoestadísticas en la Dirección General de Modernización e Investigación Territorial de la ciudad de Comodoro Rivadavia. 
+          Resuelvo problemas desarrollando flujos de trabajo para la creación, normalización, actualización y gestión de información espacial. Coordino programas y tareas interdisciplinarias y 
+          me gusta capacitarme constantemente en tecnologías como Python (geopandas, matplotlib, scikit-learn), R, PostgreSQL con PostGIS, Google Earth Engine Code, IA, indexación H3, modelos 
+          de procesamiento y todo lo relacionado a geomática.<br><br>También soy auxiliar docente de la materia Teledetección II en la Universidad Nacional de la Patagonia San Juan Bosco desde el año 2023.</p>
+
         <h2 class="section-title">
           <span class="material-symbols-outlined section-icon">cloud</span>
           Habilidades
         </h2>
 
-      <div class="skills-grid">
-        <a href="https://qgis.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-qgis.svg" alt="QGIS" title="QGIS"></a>
-        <a href="https://www.microsoft.com/excel" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-microsoftexcel.svg" alt="Microsoft Excel" title="Microsoft Excel"></a>
-        <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-postgresql.svg" alt="PostgreSQL" title="PostgreSQL"></a>
-        <a href="https://earthengine.google.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-googleearthengine.svg" alt="Google Earth Engine" title="Google Earth Engine"></a>
-        <a href="https://www.python.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-python.svg" alt="Python" title="Python"></a>
-        <a href="https://www.r-project.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-r-project.svg" alt="R" title="R"></a>
-        <a href="https://claude.com/resources/courses" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-claude-ai.svg" alt="Anthropic Claude Academy" title="Anthropic Claude Academy"></a>
-        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-html.svg" alt="HyperText Markup Language" title="HyperText Markup Language"></a>
-        <a href="https://www.w3.org/TR/css/#css" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-css.svg" alt="Cascading Style Sheets" title="Cascading Style Sheets"></a>
-        <a href="https://jupyter.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-jupyter.svg" alt="Jupyter" title="Jupyter"></a>
-        <a href="https://www.uber.com/us/en/blog/h3/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-h3.svg" alt="H3 Uber’s Hexagonal Hierarchical Spatial Index" title="H3 Uber’s Hexagonal Hierarchical Spatial Index"></a>
-        <a href="https://lookerstudio.google.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-google-datastudio.svg" alt="Google Data Studio" title="Google Data Studio"></a>
-        <a href="https://www.ibm.com/spss" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-ibmspss.svg" alt="IBM SPSS" title="IBM SPSS"></a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-github.svg" alt="GitHub" title="GitHub"></a>
-        <a href="https://www.esri.com/arcgis" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-esriarcgis.svg" alt="ESRI ArcGIS" title="ESRI ArcGIS"></a>
-      </div>
+        <div class="skills-grid">
+          <a href="https://qgis.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-qgis.svg" alt="QGIS" title="QGIS"></a>
+          <a href="https://www.microsoft.com/excel" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-microsoftexcel.svg" alt="Microsoft Excel" title="Microsoft Excel"></a>
+          <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-postgresql.svg" alt="PostgreSQL" title="PostgreSQL"></a>
+          <a href="https://earthengine.google.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-googleearthengine.svg" alt="Google Earth Engine" title="Google Earth Engine"></a>
+          <a href="https://www.python.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-python.svg" alt="Python" title="Python"></a>
+          <a href="https://www.r-project.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-r-project.svg" alt="R" title="R"></a>
+          <a href="https://claude.com/resources/courses" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-claude-ai.svg" alt="Anthropic Claude Academy" title="Anthropic Claude Academy"></a>
+          <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-html.svg" alt="HyperText Markup Language" title="HyperText Markup Language"></a>
+          <a href="https://www.w3.org/TR/css/#css" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-css.svg" alt="Cascading Style Sheets" title="Cascading Style Sheets"></a>
+          <a href="https://jupyter.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-jupyter.svg" alt="Jupyter" title="Jupyter"></a>
+          <a href="https://www.uber.com/us/en/blog/h3/" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-h3.svg" alt="H3 Uber's Hexagonal Hierarchical Spatial Index" title="H3 Uber's Hexagonal Hierarchical Spatial Index"></a>
+          <a href="https://lookerstudio.google.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-google-datastudio.svg" alt="Google Data Studio" title="Google Data Studio"></a>
+          <a href="https://www.ibm.com/spss" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-ibmspss.svg" alt="IBM SPSS" title="IBM SPSS"></a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-github.svg" alt="GitHub" title="GitHub"></a>
+          <a href="https://www.esri.com/arcgis" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-esriarcgis.svg" alt="ESRI ArcGIS" title="ESRI ArcGIS"></a>
+        </div>
 
       </section>
 
-      <!-- Section: Experiencia -->
       <section class="card animable">
         <h2 class="section-title">
           <span class="material-symbols-outlined section-icon">work</span>
@@ -131,7 +114,8 @@
           </div>
           <span class="entry-org">Dirección General de Modernización e Investigación Territorial</span>
           <span class="entry-date" data-start="2024-11" data-end="present">nov 2024 — presente</span>
-          <p class="entry-desc">Actualización y gestión de bases de datos georreferenciadas, creación de flujos de trabajo implementando geotecnologías avanzadas en función de proyectos específicos y coordinación de programas interdisciplinarios.</p>
+          <p class="entry-desc">Actualización y gestión de bases de datos georreferenciadas, creación de flujos de trabajo implementando geotecnologías avanzadas en función 
+            de proyectos específicos y coordinación de programas interdisciplinarios.</p>
         </div>
 
         <div class="entry">
@@ -140,8 +124,7 @@
           </div>
           <span class="entry-org">Universidad Nacional de la Patagonia San Juan Bosco</span>
           <span class="entry-date" data-start="2023-01" data-end="present">ene 2023 — presente</span>
-          <p class="entry-desc">Coordinación de contenidos y dictado de clases en materia de herramientas avanzadas
-            para el sensoramiento remoto.</p>
+          <p class="entry-desc">Coordinación de contenidos y dictado de clases en materia de herramientas avanzadas para el sensoramiento remoto.</p>
         </div>
 
         <div class="entry">
@@ -150,14 +133,12 @@
           </div>
           <span class="entry-org">Dirección de Investigación Territorial</span>
           <span class="entry-date" data-start="2021-11" data-end="2022-08">nov 2021 — ago 2022</span>
-          <p class="entry-desc">Creación de información espacial a partir de relevamientos 
-            en territorio y uso de instrumentos de precisión. Manejo de bases de datos y 
-            coordinación entre equipos técnicos multidisciplinarios.</p>
+          <p class="entry-desc">Creación de información espacial a partir de relevamientos en territorio y uso de instrumentos de precisión. Manejo 
+            de bases de datos y coordinación entre equipos técnicos multidisciplinarios.</p>
         </div>
 
       </section>
 
-      <!-- Section: Proyectos -->
       <section class="card animable">
         <h2 class="section-title">
           <span class="material-symbols-outlined section-icon">map</span>
@@ -166,75 +147,88 @@
 
         <div class="entry">
           <div class="entry-header">
-            <span class="entry-title">Mapa interactivo institucional de transporte público</span>
+            <a class="entry-title" href="https://github.com/agstnrdz/inundaciones/" target="_blank" rel="noopener noreferrer">Visor de susceptibilidad a inundaciones en Comodoro Rivadavia</a>
           </div>
           <span class="entry-date">2026</span>
-          <p class="entry-desc">Desarrollé un <a href="https://github.com/comodoro-mit/transporte/" target="_blank">mapa interactivo</a> 
-            que fue difundido por los medios oficiales del municipio para el acceso de toda la comunidad. 
-            Este <a href="https://transporte.comodoro.gov.ar/" target="_blank">sitio</a> (también optimizado para dispositivos móviles) permite consultar los recorridos y paradas de transporte público. Cuenta con funciones interactivas (ubicación en tiempo real
-           que calcula las paradas más cercanas al usuario, estado del tiempo, modos de mapa base, guía de uso y avisos) y usa fuentes de datos oficiales 
+          <p class="entry-desc">Desarrollé un <a class="inline-link" href="https://github.com/agstnrdz/inundaciones" target="_blank" rel="noopener noreferrer"><u>visor</u></a> interactivo 
+            de susceptibilidad a inundaciones para el área urbana de Comodoro Rivadavia, basado en el modelo HAND (Height Above Nearest Drainage). Permite explorar distintos umbrales 
+            de altura sobre el drenaje más cercano y observar en tiempo real la superficie y población expuesta por barrio y grupo etario: el análisis identifica cerca de 30.000 
+            personas (13,9% de la población) dentro de los 0-5 metros de altura sobre drenaje, afectando aproximadamente el 15% de la huella urbana.</p>
+          <div class="tag-row">
+            <span class="tag tag-verde">Análisis espacial</span>
+            <span class="tag tag-rojo">Python</span>
+            <span class="tag tag-azul">QGIS</span>
+            <span class="tag tag-naranja">HAND</span>
+          </div>
+        </div>        
+
+        <div class="entry">
+          <div class="entry-header">
+            <a class="entry-title" href="https://github.com/comodoro-mit/transporte/" target="_blank" rel="noopener noreferrer">Mapa interactivo institucional de transporte público</a>
+          </div>
+          <span class="entry-date">2026</span>
+          <p class="entry-desc">Desarrollé un <a class="inline-link" href="https://github.com/comodoro-mit/transporte/" target="_blank"><u>mapa</u></a>
+            que fue difundido por los medios oficiales del municipio para el acceso de toda la ciudad.
+            Este sitio (también optimizado para dispositivos móviles) permite consultar los recorridos y paradas de transporte público. Cuenta con funciones interactivas (ubicación en tiempo real
+           que calcula las paradas más cercanas al usuario, estado del tiempo, modos de mapa base, guía de uso y avisos) y usa fuentes de datos oficiales
            locales y toma datos de APIs públicas.</p>
-          <div class="chip-row">
-            <span class="chip chip-rojo">JavaScript</span>
-            <span class="chip chip-azul">QGIS</span>
-            <span class="chip chip-verde">Front-end</span>
+          <div class="tag-row">
+            <span class="tag tag-rojo">JavaScript</span>
+            <span class="tag tag-azul">QGIS</span>
+            <span class="tag tag-verde">Front-end</span>
           </div>
         </div>
 
         <div class="entry">
           <div class="entry-header">
-            <span class="entry-title">Visualizador de cobertura quemada en Google Earth Engine Code Apps</span>
+            <a class="entry-title" href="https://agstnrdz.projects.earthengine.app/view/incendios-patagonia-argentina" target="_blank" rel="noopener noreferrer">Visualizador de cobertura quemada en Google Earth Engine Code Apps</a>
           </div>
           <span class="entry-date">2026</span>
-          <p class="entry-desc">Practiqué álgebra de mapas y publiqué una <a href="https://agstnrdz.projects.earthengine.app/view/incendios-patagonia-argentina" target="_blank"
-            >App</a> (<a href="https://www.linkedin.com/feed/update/urn:li:activity:7491451852656381953/" target="_blank" >publicación en LinkedIn</a>) usando Google Earth Engine Code. 
-            Buscando representar la severidad de la cobertura quemada en los incendios de Lago Puelo, El Hoyo, Epuyén y Parque 
-            Nacional Los Alerces, calculé la diferencia entre los valores de NBR (Índice Normalizado de Área Quemada), lo que permitió obtener 
-            estimaciones aproximadas, en hectáreas, de las zonas más afectadas por el fuego. Utilicé un mosaico de imágenes Landsat 8 pre-incendio 
-            y Sentinel 2 post-incendio debido a la disponibilidad de los sensores, ambas normalizadas a una resolución de 30 metros. Los valores 
-            obtenidos son aproximados y están sujetos a modificaciones mientras siga habiendo información sobre nuevos incendios.</p>
-          <div class="chip-row">
-            <span class="chip chip-rojo">JavaScript</span>
-            <span class="chip chip-naranja">Sensoramiento remoto</span>
-            <span class="chip chip-amarillo">Python</span>
+          <p class="entry-desc">Practiqué álgebra de mapas y publiqué una App (<a class="inline-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7491451852656381953/" 
+            target="_blank"><u>publicación en LinkedIn</u></a>) usando Google Earth Engine Code.
+            Buscando representar la severidad de la cobertura quemada en los incendios de Lago Puelo, El Hoyo, Epuyén y Parque
+            Nacional Los Alerces, calculé la diferencia entre los valores de NBR (Índice Normalizado de Área Quemada), lo que permitió obtener
+            estimaciones aproximadas, en hectáreas, de las zonas más afectadas por el fuego. Utilicé un mosaico de imágenes Landsat 8 pre-incendio
+            y Sentinel 2 post-incendio debido a la disponibilidad de los sensores, ambas normalizadas a una resolución de 30 metros.</p>
+          <div class="tag-row">
+            <span class="tag tag-rojo">JavaScript</span>
+            <span class="tag tag-naranja">Sensoramiento remoto</span>
+            <span class="tag tag-amarillo">Python</span>
           </div>
         </div>
 
         <div class="entry">
           <div class="entry-header">
-            <span class="entry-title">Modelo de procesos para el cálculo de datos censales por barrio</span>
+            <a class="entry-title" href="https://www.researchgate.net/publication/391801709_Procesamiento_del_Censo_2022_en_Comodoro_Rivadavia_Metodologias_para_la_obtencion_de_datos_censales_por_barrios" target="_blank" rel="noopener noreferrer">Modelo de procesos para el cálculo de datos censales por barrio</a>
           </div>
           <span class="entry-date">2025</span>
-          <p class="entry-desc">En julio del año 2025 presenté la 
-            <a href="https://www.researchgate.net/publication/391801709_Procesamiento_del_Censo_2022_en_Comodoro_Rivadavia_Metodologias_para_la_obtencion_de_datos_censales_por_barrios" target="_blank"
-            >ponencia</a> "Procesamiento del Censo 2022 en Comodoro Rivadavia: Metodologías para la obtención de datos censales por barrios"
-            en el VII Congreso Nacional de Tecnologías de la Información Geográfica realizado en la ciudad de Puerto Madryn. El trabajo
-            detalla el desarrollo de un modelo de procesos llamado "unión de límites catastrales y radios censales no coincidentes con datos cuantitativos",
+          <p class="entry-desc">En julio del año 2025 presenté la <a class="inline-link" href="https://www.researchgate.net/publication/391801709_Procesamiento_del_Censo_2022_en_Comodoro_Rivadavia_Metodologias_para_la_obtencion_de_datos_censales_por_barrios" target="_blank" rel="noopener noreferrer"><u>ponencia</u></a> "Procesamiento del Censo 2022 en Comodoro Rivadavia: Metodologías para 
+            la obtención de datos censales por barrios" en el VII Congreso Nacional de Tecnologías de la Información Geográfica realizado en la ciudad 
+            de Puerto Madryn. El trabajo detalla el desarrollo de un modelo de procesos llamado "unión de límites catastrales y radios censales no coincidentes con datos cuantitativos",
             el cual intenta resolver el problema del solapamiento de los radios censales de INDEC sobre los límites oficiales de barrios de la ciudad de Comodoro Rivadavia.
           </p>
-          <div class="chip-row">
-            <span class="chip chip-azul">QGIS</span>
-            <span class="chip chip-verde">Excel</span>
+          <div class="tag-row">
+            <span class="tag tag-azul">QGIS</span>
+            <span class="tag tag-verde">Excel</span>
           </div>
         </div>
 
-                <div class="entry">
+        <div class="entry">
           <div class="entry-header">
-            <span class="entry-title">Cartografía de la recuperación de los médanos costeros de la ciudad de Puerto Madryn</span>
+            <a class="entry-title" href="https://www.researchgate.net/publication/403295710_Cartografia_de_la_recuperacion_de_los_medanos_costeros_de_la_ciudad_de_Puerto_Madryn_mediante_VANT" target="_blank" rel="noopener noreferrer">Cartografía de la recuperación de los médanos costeros de la ciudad de Puerto Madryn</a>
           </div>
           <span class="entry-date">2023 - 2026</span>
-          <p class="entry-desc">Participé en la Unidad Ejecutora del <a href="https://www.researchgate.net/publication/403295710_Cartografia_de_la_recuperacion_de_los_medanos_costeros_de_la_ciudad_de_Puerto_Madryn_mediante_VANT" target="_blank"
-            >Proyecto</a> de Extensión confeccionando cartografía temática usando modelos digitales de elevación (MDE)
+          <p class="entry-desc">Participé en la Unidad Ejecutora del Proyecto de Extensión confeccionando cartografía temática usando modelos digitales de elevación (MDE)
              y modelados 3D resultantes de vuelos VANT para representar resultados de cálculos volumétricos de los médanos costeros.
           </p>
-          <div class="chip-row">         
-            <span class="chip chip-rosa">Extensión</span>            
-            <span class="chip chip-azul">QGIS</span>            
-            <span class="chip chip-naranja">Sensoramiento remoto</span>               
+          <div class="tag-row">
+            <span class="tag tag-rosa">Extensión</span>
+            <span class="tag tag-azul">QGIS</span>
+            <span class="tag tag-naranja">Sensoramiento remoto</span>
           </div>
         </div>
 
-          <div class="entry">
+        <div class="entry">
           <div class="entry-header">
             <span class="entry-title">Análisis espacial y planificación territorial del senderismo en ambientes patagónicos esteparios protegidos</span>
           </div>
@@ -242,18 +236,65 @@
           <p class="entry-desc">Participé en la Unidad Ejecutora del Proyecto de Investigación confeccionando cartografía temática usando modelos digitales de elevación (MDE)
              y geoprocesos avanzados para representar características geológicas y morfológicas de un proyecto de Área Natural Protegida.
           </p>
-          <div class="chip-row">
-            <span class="chip chip-azul">QGIS</span>
-            <span class="chip chip-morado">Investigación</span>
+          <div class="tag-row">
+            <span class="tag tag-azul">QGIS</span>
+            <span class="tag tag-morado">Investigación</span>
           </div>
         </div>
 
       </section>
 
-      <!-- Section: Educación -->
       <section class="card animable">
         <h2 class="section-title">
-          <span class="material-symbols-outlined section-icon">map</span>
+          <span class="material-symbols-outlined section-icon">campaign</span>
+          Exposiciones y disertaciones
+        </h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">VII Congreso Nacional de Tecnologías de la Información Geográfica</span>
+          </div>
+          <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+          <span class="entry-date">2025</span>
+          <p class="entry-desc">Expositor de la ponencia "Procesamiento del censo 2022: metodologías, antecedentes y análisis territorial por barrio".</p>
+          <a href="../assets/certs/2025_cert_expositor_CONTIG.png" target="_blank" class="entry-link">Ver certificado ↗</a>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Dzetsaka: complemento QGIS para la clasificación no supervisada de imágenes satelitales</span>
+          </div>
+          <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+          <span class="entry-date">2025</span>
+          <p class="entry-desc">Disertante del taller pre-congreso en el VII Congreso Nacional de Tecnologías de la Información Geográfica.</p>
+          <a href="../assets/certs/2025_cert_disertante_CONTIG.png" target="_blank" class="entry-link">Ver certificado ↗</a>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">IV Jornadas sobre divulgación de proyectos extensionistas de la FHCS</span>
+          </div>
+          <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+          <span class="entry-date">2024</span>
+          <p class="entry-desc">Expositor de la ponencia "Cartografía temática SIG de usos de los médanos costeros de la ciudad de Puerto Madryn".</p>
+          <a href="../assets/certs/2024_cert_expositor_PE_Medanos.jpg" target="_blank" class="entry-link">Ver certificado ↗</a>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">XII Jornadas Patagónicas de Geografía y II Congreso Internacional de Geografía de la Patagonia Argentino-Chilena</span>
+          </div>
+          <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+          <span class="entry-date">2022</span>
+          <p class="entry-desc">Expositor de la ponencia "Tecnologías de la Información Geográfica y datos abiertos para la elaboración de diagnósticos territoriales: espacios verdes en Comodoro Rivadavia, Chubut".</p>
+          <a href="../assets/certs/2022_cert_expositor_XII_Jornadas_Pat.jpg" target="_blank" class="entry-link">Ver certificado ↗</a>
+        </div>
+
+      </section>
+
+      <section class="card animable">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined section-icon">school</span>
           Educación
         </h2>
 
@@ -264,8 +305,6 @@
           <span class="entry-org">Universidad Nacional de la Patagonia San Juan Bosco</span>
           <span class="entry-date">2026</span>
           <p class="entry-desc">Estudiante avanzado aspirando a graduarme el presente año.</p>
-          <div class="chip-row">
-          </div>
         </div>
 
         <div class="entry">
@@ -275,437 +314,361 @@
           <span class="entry-org">New English Time Institute</span>
           <span class="entry-date">2016</span>
           <p class="entry-desc">Lectura y comprensión auditiva sólidas. Producción escrita y oral funcional en contextos técnicos y cotidianos. Sin certificación formal.</p>
-          <div class="chip-row">
-          </div>
         </div>
 
       </section>
 
-      <!-- Section: Formación  -->
-      <section class="card animable" id="seccion-formacion">
+      <section class="card animable">
         <h2 class="section-title">
-          <span class="material-symbols-outlined section-icon">school</span>
-          Formación
-          <div class="filter-chips" id="filtro-formacion">
-            <button class="filter-chip active" data-filtro="todo">Todo</button>
-            <button class="filter-chip" data-filtro="aprobacion">Aprobación</button>
-            <button class="filter-chip" data-filtro="expositor">Expositor</button>
+          <span class="material-symbols-outlined section-icon">workspace_premium</span>
+          Certificaciones
+          <div class="filter-chips" id="filtro-certs">
+            <button class="filter-chip" data-filtro="todo">Todo</button>
+            <button class="filter-chip active" data-filtro="aprobacion-intensiva">Intensiva</button>
+            <button class="filter-chip" data-filtro="aprobacion-corta">Corta</button>
             <button class="filter-chip" data-filtro="participacion">Participación</button>
           </div>
         </h2>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 29 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Publicá mapas y (más servicios) con MVT Server</span>
-            </div>
-            <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
-          </div>
-          <a href="assets/certs/2026_cert_IDERA_MVT_server.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_IDERA_MVT_server.png" alt="Certificado">
-          </a>
-        </div>
+        <div class="cert-items">
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 28 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Teaching the AI Fluency Framework</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Publicá mapas y (más servicios) con MVT Server</span>
+              </div>
+              <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Anthropic Academy</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_IDERA_MVT_server.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_IDERA_MVT_server.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 27 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Fundamentals of Remote Sensing</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-corta">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Teaching the AI Fluency Framework</span>
+              </div>
+              <span class="entry-org">Anthropic Academy</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_ARSET_4.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_ARSET_4.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 26 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">AI Fluency: Framework & Foundations</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Fundamentals of Remote Sensing</span>
+              </div>
+              <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Anthropic Academy</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_ARSET_4.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_ARSET_4.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 25 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Introduction to Claude Cowork</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-corta">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">AI Fluency: Framework &amp; Foundations</span>
+              </div>
+              <span class="entry-org">Anthropic Academy</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Anthropic Academy</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 24 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Claude 101</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-corta">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Introduction to Claude Cowork</span>
+              </div>
+              <span class="entry-org">Anthropic Academy</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Anthropic Academy</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 23 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Monitoring Water Quality in Lakes and Coastal Regions Using STREAM</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-corta">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Claude 101</span>
+              </div>
+              <span class="entry-org">Anthropic Academy</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_ARSET_3.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_ARSET_3.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 22 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Introduction to Python</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Monitoring Water Quality in Lakes and Coastal Regions Using STREAM</span>
+              </div>
+              <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Santander Open Academy</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_ARSET_3.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_ARSET_3.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Santander_Python.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Santander_Python.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 21 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">English Fundamentals: Successful Networking and Interviews</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Introduction to Python</span>
+              </div>
+              <span class="entry-org">Santander Open Academy</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Santander Open Academy & Pennsylvania State University ELP</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_Santander_Python.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Santander_Python.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Santander_English.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Santander_English.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 20 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Introduction to Data Science</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-corta">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">English Fundamentals: Successful Networking and Interviews</span>
+              </div>
+              <span class="entry-org">Santander Open Academy &amp; Pennsylvania State University ELP</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Santander Open Academy & IE University</span>
-            <span class="entry-date">2026</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2026_cert_aprobacion_Santander_English.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Santander_English.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="participacion"> <!-- Certificado 19 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Cartografía de la recuperación de los médanos costeros de la ciudad de Puerto Madryn</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Introduction to Data Science</span>
+              </div>
+              <span class="entry-org">Santander Open Academy &amp; IE University</span>
+              <span class="entry-date">2026</span>
             </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc">Participación en la Unidad Ejecutora del Proyecto de Extensión.</p>
+            <a href="../assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_participacion_Proy_Extension.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_participacion_Proy_Extension.png" alt="Certificado">
-          </a>
-        </div>
 
-         <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 18 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Seminario de Posgrado y Extensión: mapeo de inundaciones en áreas urbanas usando HAND Model y QGIS</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Cartografía de la recuperación de los médanos costeros de la ciudad de Puerto Madryn</span>
+              </div>
+              <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+              <span class="entry-date">2025</span>
+              <p class="entry-desc">Participación en la Unidad Ejecutora del Proyecto de Extensión.</p>
             </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc">Calificación: 100.</p>
+            <a href="../assets/certs/2025_cert_participacion_Proy_Extension.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_participacion_Proy_Extension.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="participacion"> <!-- Certificado 17 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Conservatorio: evolución, innovación y territorio: los SIG en clave interdisciplinaria</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Seminario de Posgrado y Extensión: mapeo de inundaciones en áreas urbanas usando HAND Model y QGIS</span>
+              </div>
+              <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+              <span class="entry-date">2025</span>
+              <p class="entry-desc">Calificación: 100.</p>
             </div>
-            <span class="entry-org">Centro Argentino de Cartografía</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 16 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Introducción al uso del RedatamX portable para la generación de indicadores de base censal</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Conservatorio: evolución, innovación y territorio: los SIG en clave interdisciplinaria</span>
+              </div>
+              <span class="entry-org">Centro Argentino de Cartografía</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Escuela de Economía y Gestión para el Desarrollo Local</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_Redatam.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_Redatam.jpg" alt="Certificado">
-          </a>
-        </div>
 
-          <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 15 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">QGIS avanzado aplicado a las estadísticas con datos censales</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Introducción al uso del RedatamX portable para la generación de indicadores de base censal</span>
+              </div>
+              <span class="entry-org">Escuela de Economía y Gestión para el Desarrollo Local</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Escuela de Economía y Gestión para el Desarrollo Local</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_aprobacion_Redatam.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_Redatam.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="participacion"> <!-- Certificado 14 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Marco Geoestadístico Nacional: unidades que lo componen, datos censales y usos para el análisis territorial</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">QGIS avanzado aplicado a las estadísticas con datos censales</span>
+              </div>
+              <span class="entry-org">Escuela de Economía y Gestión para el Desarrollo Local</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_asistente_IDERA_3.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_asistente_IDERA_3.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="expositor"> <!-- Certificado 13 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">VII Congreso Nacional de Tecnologías de la Información Geográfica</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Marco Geoestadístico Nacional: unidades que lo componen, datos censales y usos para el análisis territorial</span>
+              </div>
+              <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc">Expositor de la ponencia "Procesamiento del censo 2022: metodologías, antecedentes y análisis territorial por barrio".</p>
+            <a href="../assets/certs/2025_cert_asistente_IDERA_3.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_asistente_IDERA_3.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_expositor_CONTIG.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_expositor_CONTIG.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="expositor"> <!-- Certificado 12 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Dzetsaka: Complemento QGIS para la clasificación no superfvisada de imágenes satelitales</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Especialización en IA en la gestión pública</span>
+              </div>
+              <span class="entry-org">Instituto Superior de la Carrera del Gobierno de la Ciudad de Buenos Aires</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc">Disertante de taller pre-congreso en VII Congreso Nacional de Tecnologías de la Información Geográfica.</p>
+            <a href="../assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_disertante_CONTIG.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_disertante_CONTIG.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 11 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Especialización en IA en la gestión pública</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Especialización en gestión pública y datos</span>
+              </div>
+              <span class="entry-org">Instituto Superior de la Carrera del Gobierno de la Ciudad de Buenos Aires</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Instituto Superior de la Carrera del Gobierno de la Ciudad de Buenos Aires</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 10 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Especialización en gestión pública y datos</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Monitoring Global Terrestrial Surface Water Height using Remote Sensing</span>
+              </div>
+              <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">Instituto Superior de la Carrera del Gobierno de la Ciudad de Buenos Aires</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_aprobacion_ARSET_2.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_ARSET_2.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 9 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Monitoring Global Terrestrial Surface Water Height using Remote Sensing</span>
+          <div class="entry entry-with-cert" data-tipo="aprobacion-intensiva">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Calculating Spectral Indices for Land and Aquatic Applications Using QGIS</span>
+              </div>
+              <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
+              <span class="entry-date">2025</span>
             </div>
-            <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2025_cert_aprobacion_ARSET.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2025_cert_aprobacion_ARSET.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_ARSET_2.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_ARSET_2.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="aprobacion"> <!-- Certificado 8 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Calculating Spectral Indices for Land and Aquatic Applications Using QGIS</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Simbología ráster</span>
+              </div>
+              <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
+              <span class="entry-date">2024</span>
+              <p class="entry-desc">Taller virtual del Ciclo de Desarrollo de Capacidades de IDERA.</p>
             </div>
-            <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
-            <span class="entry-date">2025</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2024_cert_asistente_IDERA.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2024_cert_asistente_IDERA.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2025_cert_aprobacion_ARSET.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2025_cert_aprobacion_ARSET.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="participacion"> <!-- Certificado 7 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Simbología ráster</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Jornada GIS Day: Conectando laboratorios SIG de universidades nacionales de Argentina</span>
+              </div>
+              <span class="entry-org">Facultad de Humanidades, Universidad Nacional del Nordeste</span>
+              <span class="entry-date">2024</span>
             </div>
-            <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
-            <span class="entry-date">2024</span>
-            <p class="entry-desc">Taller virtual del Ciclo de Desarrollo de Capacidades de IDERA.</p>
+            <a href="../assets/certs/2024_cert_asistente_GISday.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2024_cert_asistente_GISday.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2024_cert_asistente_IDERA.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2024_cert_asistente_IDERA.png" alt="Certificado">
-          </a>
-        </div>
 
-         <div class="entry entry-with-cert" data-tipo="participacion"> <!-- Certificado 6 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Jornada GIS Day: Conectando laboratorios SIG de universidades nacionales de Argentina</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Gestión de proyectos SIG</span>
+              </div>
+              <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
+              <span class="entry-date">2024</span>
+              <p class="entry-desc">Taller virtual del Ciclo de Desarrollo de Capacidades de IDERA.</p>
             </div>
-            <span class="entry-org">Facultad de Humanidades, Universidad Nacional del Nordeste</span>
-            <span class="entry-date">2024</span>
-            <p class="entry-desc"></p>
+            <a href="../assets/certs/2024_cert_asistente_IDERA_2.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2024_cert_asistente_IDERA_2.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2024_cert_asistente_GISday.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2024_cert_asistente_GISday.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="expositor"> <!-- Certificado 5 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">IV Jornadas sobre divulgación de proyectos extensionistas de la FHCS. La curricularización de la extensión universitaria</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">II Jornadas Patagónicas sobre Tecnicatura Universitaria en SIG y Teledetección</span>
+              </div>
+              <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+              <span class="entry-date">2020</span>
+              <p class="entry-desc">Expositor de la ponencia "Reflexiones en torno a nuestras prácticas: docencia, investigación y extensión en Geografía".</p>
             </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2024</span>
-            <p class="entry-desc">Expositor de la ponencia "Cartografía temática SIG de usos de los médanos costeros de la ciudad de Puerto Madryn".</p>
+            <a href="../assets/certs/2020_cert_expositor_Extension_geografia.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2020_cert_expositor_Extension_geografia.jpg" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2024_cert_expositor_PE_Medanos.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2024_cert_expositor_PE_Medanos.jpg" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="participacion"> <!-- Certificado 4 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Gestión de proyectos SIG</span>
+          <div class="entry entry-with-cert" data-tipo="participacion">
+            <div class="entry-cert-body">
+              <div class="entry-header">
+                <span class="entry-title">Extensión y geografía</span>
+              </div>
+              <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
+              <span class="entry-date">2019</span>
             </div>
-            <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
-            <span class="entry-date">2024</span>
-            <p class="entry-desc">Taller virtual del Ciclo de Desarrollo de Capacidades de IDERA.</p>
+            <a href="../assets/certs/2019_cert_expositor_Jornadas_Pat.png" target="_blank" class="entry-cert-thumb">
+              <img src="../assets/certs/2019_cert_expositor_Jornadas_Pat.png" alt="Certificado">
+            </a>
           </div>
-          <a href="assets/certs/2024_cert_asistente_IDERA_2.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2024_cert_asistente_IDERA_2.png" alt="Certificado">
-          </a>
-        </div>
 
-        <div class="entry entry-with-cert" data-tipo="expositor"> <!-- Certificado 3 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">XII Jornadas Patagónicas de Geografía y II Congreso Internacional de Geografía de la Patagonia Argentino-Chilena</span>
-            </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2022</span>
-            <p class="entry-desc">Expositor de la ponencia "Tecnologías de la Información Geográfica y datos abiertos para la elaboración de diagnósticos territoriales: espacios verdes en Comodoro Rivadavia, Chubut".</p>
-          </div>
-          <a href="assets/certs/2022_cert_expositor_XII_Jornadas_Pat.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2022_cert_expositor_XII_Jornadas_Pat.jpg" alt="Certificado">
-          </a>
-        </div>
-
-         <div class="entry entry-with-cert" data-tipo="expositor"> <!-- Certificado 2 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">II Jornadas Patagónicas sobre Tecnicatura Universitaria en SIG y Teledetección</span>
-            </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2020</span>
-            <p class="entry-desc">Expositor de la ponencia "Reflexiones en torno a nuestras prácticas: docencia, investigación y extensión en Geografía".</p>
-          </div>
-          <a href="assets/certs/2020_cert_expositor_Extension_geografia.jpg" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2020_cert_expositor_Extension_geografia.jpg" alt="Certificado">
-          </a>
-        </div>
-
-        <div class="entry entry-with-cert" data-tipo="expositor"> <!-- Certificado 1 -->
-          <div class="entry-cert-body">
-            <div class="entry-header">
-              <span class="entry-title">Extensión y geografía</span>
-            </div>
-            <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
-            <span class="entry-date">2019</span>
-            <p class="entry-desc"></p>
-          </div>
-          <a href="assets/certs/2019_cert_expositor_Jornadas_Pat.png" target="_blank" class="entry-cert-thumb">
-            <img src="assets/certs/2019_cert_expositor_Jornadas_Pat.png" alt="Certificado">
-          </a>
         </div>
 
       </section>
 
     </main>
 
-  </div><!-- /page-wrapper -->
-
+  </div>
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -715,7 +678,6 @@
 
     document.querySelectorAll('.animable').forEach(el => observer.observe(el));
 
-    // ── Duración de experiencia ──
     (function () {
       function duracion(startYM, endYM) {
         const [sy, sm] = startYM.split('-').map(Number);
@@ -723,7 +685,7 @@
         if (endYM === 'present') {
           const hoy = new Date();
           ey = hoy.getFullYear();
-          em = hoy.getMonth() + 1; // getMonth() es 0-indexado
+          em = hoy.getMonth() + 1;
         } else {
           [ey, em] = endYM.split('-').map(Number);
         }
@@ -743,7 +705,6 @@
       });
     })();
 
-    // Light/dark mode
     (function () {
       const root = document.documentElement;
       const btn = document.getElementById('theme-toggle');
@@ -770,61 +731,29 @@
       });
     })();
 
-    // ── Analytics ──
     (function () {
-      const foto = document.querySelector('.sidebar-photo-wrap');
-      function registrar(boton) {
-        if (typeof gtag === 'function') {
-          gtag('event', 'photo_click', { mouse_button: boton });
-        }
-      }
-      foto.addEventListener('click', function () { registrar('izquierdo'); });
-      foto.addEventListener('contextmenu', function () { registrar('derecho'); });
-      // No se llama preventDefault(): el menú contextual del navegador sigue funcionando normalmente.
-    })();
+      const filtro = document.getElementById('filtro-certs');
+      if (!filtro) return;
 
-    // ── Analytics ──
-    document.querySelector('.sidebar-links').addEventListener('click', function (e) {
-      const link = e.target.closest('.sidebar-link');
-      if (!link) return;
-      if (typeof gtag === 'function') {
-        gtag('event', 'contact_click', {
-          link_type: link.dataset.contact
+      function aplicarFiltro(tipo) {
+        document.querySelectorAll('.cert-items .entry').forEach(function (item) {
+          const mostrar = tipo === 'todo' || item.dataset.tipo === tipo;
+          item.style.display = mostrar ? '' : 'none';
         });
       }
-    });
 
-    // ── Analytics ──
-    document.getElementById('seccion-formacion').addEventListener('click', function (e) {
-      const thumb = e.target.closest('.entry-cert-thumb');
-      if (!thumb) return;
-      const entry = thumb.closest('.entry');
-      const titulo = entry ? entry.querySelector('.entry-title').textContent.trim() : '';
-      if (typeof gtag === 'function') {
-        gtag('event', 'cert_click', {
-          cert_title: titulo,
-          cert_tipo: entry ? entry.dataset.tipo : ''
-        });
-      }
-    });
+      filtro.addEventListener('click', function (e) {
+        const btn = e.target.closest('.filter-chip');
+        if (!btn) return;
 
-    // ── Formación filter ──
-    document.getElementById('filtro-formacion').addEventListener('click', function(e) {
-      const btn = e.target.closest('.filter-chip');
-      if (!btn) return;
-
-      // Marcar activo
-      this.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filtro = btn.dataset.filtro;
-      const entradas = document.querySelectorAll('#seccion-formacion .entry');
-
-      entradas.forEach(entry => {
-        const mostrar = filtro === 'todo' || entry.dataset.tipo === filtro;
-        entry.style.display = mostrar ? '' : 'none';
+        filtro.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        aplicarFiltro(btn.dataset.filtro);
       });
-    });
+
+      const activo = filtro.querySelector('.filter-chip.active');
+      aplicarFiltro(activo ? activo.dataset.filtro : 'todo');
+    })();
   </script>
 
 </body>
