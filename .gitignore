@@ -1,0 +1,48 @@
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AI tooling
+.qodo/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Future build tooling
+node_modules/
+dist/
+
+# Internal docs
+DESIGN_SYSTEM.md
+agenda.md
+
+# Unused media
+assets/img/Argentina.jpeg
+assets/img/Argentina_topo.png
+assets/img/Bobby_Fischer.jpg
+assets/img/Chubut_sat.jpg
+assets/img/Chubut_sat_2.jpg
+assets/img/Chubut_sat_3.jpg
+assets/img/Maserati_1958.jpg
+assets/img/Maserati_1958_header.png
+assets/img/PI_senderismo.png
+assets/icons/favicon-48.png
+assets/icons/icon-adobephotoshop.svg
+assets/icons/logo-github.svg
+assets/icons/logo-qgis.svg
