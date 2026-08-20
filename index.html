@@ -16,20 +16,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-  <link rel="stylesheet" href="visor_2.css">
+  <link rel="stylesheet" href="style.css">
 
-  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
   <div class="page-wrapper">
+
+    <div class="sidebar-col">
 
     <aside class="sidebar animable">
 
       <h1 class="sidebar-name">Agustín Alejandro Rodríguez</h1>
 
       <div class="sidebar-photo-wrap">
-        <img src="../assets/img/perfil.jpeg" alt="Foto de perfil" class="sidebar-photo">
+        <img src="assets/img/perfil.jpeg" alt="Foto de perfil" class="sidebar-photo">
       </div>
 
       <p class="sidebar-role">Analista de Sistemas de Información Geográfica</p>
@@ -62,15 +64,23 @@
 
     </aside>
 
+    <div class="sidebar-bottom-bar">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+        <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
+      </button>
+      <button id="back-to-top" class="theme-toggle" type="button" aria-label="Volver arriba">
+        <span class="material-symbols-outlined theme-toggle-icon">arrow_upward</span>
+      </button>
+    </div>
+
+    </div>
+
     <main class="content">
 
       <section class="card animable">
         <h2 class="section-title">
           <span class="material-symbols-outlined section-icon">person</span>
           Sobre mí
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
-            <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
-          </button>
         </h2>
         <p class="sobre-mi-desc">Soy responsable jerárquico del área de Geoestadísticas en la Dirección General de Modernización e Investigación Territorial de la ciudad de Comodoro Rivadavia. 
           Resuelvo problemas desarrollando flujos de trabajo para la creación, normalización, actualización y gestión de información espacial. Coordino programas y tareas interdisciplinarias y 
@@ -83,21 +93,21 @@
         </h2>
 
         <div class="skills-grid">
-          <a href="https://qgis.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-qgis.svg" alt="QGIS" title="QGIS"></a>
-          <a href="https://www.microsoft.com/excel" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-microsoftexcel.svg" alt="Microsoft Excel" title="Microsoft Excel"></a>
-          <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-postgresql.svg" alt="PostgreSQL" title="PostgreSQL"></a>
-          <a href="https://earthengine.google.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-googleearthengine.svg" alt="Google Earth Engine" title="Google Earth Engine"></a>
-          <a href="https://www.python.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-python.svg" alt="Python" title="Python"></a>
-          <a href="https://www.r-project.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-r-project.svg" alt="R" title="R"></a>
-          <a href="https://claude.com/resources/courses" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-claude-ai.svg" alt="Anthropic Claude Academy" title="Anthropic Claude Academy"></a>
-          <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-html.svg" alt="HyperText Markup Language" title="HyperText Markup Language"></a>
-          <a href="https://www.w3.org/TR/css/#css" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-css.svg" alt="Cascading Style Sheets" title="Cascading Style Sheets"></a>
-          <a href="https://jupyter.org" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-jupyter.svg" alt="Jupyter" title="Jupyter"></a>
-          <a href="https://www.uber.com/us/en/blog/h3/" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-h3.svg" alt="H3 Uber's Hexagonal Hierarchical Spatial Index" title="H3 Uber's Hexagonal Hierarchical Spatial Index"></a>
-          <a href="https://lookerstudio.google.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-google-datastudio.svg" alt="Google Data Studio" title="Google Data Studio"></a>
-          <a href="https://www.ibm.com/spss" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-ibmspss.svg" alt="IBM SPSS" title="IBM SPSS"></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-github.svg" alt="GitHub" title="GitHub"></a>
-          <a href="https://www.esri.com/arcgis" target="_blank" rel="noopener noreferrer"><img src="../assets/icons/icon-esriarcgis.svg" alt="ESRI ArcGIS" title="ESRI ArcGIS"></a>
+          <a href="https://qgis.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-qgis.svg" alt="QGIS" title="QGIS"></a>
+          <a href="https://www.microsoft.com/excel" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-microsoftexcel.svg" alt="Microsoft Excel" title="Microsoft Excel"></a>
+          <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-postgresql.svg" alt="PostgreSQL" title="PostgreSQL"></a>
+          <a href="https://earthengine.google.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-googleearthengine.svg" alt="Google Earth Engine" title="Google Earth Engine"></a>
+          <a href="https://www.python.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-python.svg" alt="Python" title="Python"></a>
+          <a href="https://www.r-project.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-r-project.svg" alt="R" title="R"></a>
+          <a href="https://claude.com/resources/courses" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-claude-ai.svg" alt="Anthropic Claude Academy" title="Anthropic Claude Academy"></a>
+          <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-html.svg" alt="HyperText Markup Language" title="HyperText Markup Language"></a>
+          <a href="https://www.w3.org/TR/css/#css" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-css.svg" alt="Cascading Style Sheets" title="Cascading Style Sheets"></a>
+          <a href="https://jupyter.org" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-jupyter.svg" alt="Jupyter" title="Jupyter"></a>
+          <a href="https://www.uber.com/us/en/blog/h3/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-h3.svg" alt="H3 Uber's Hexagonal Hierarchical Spatial Index" title="H3 Uber's Hexagonal Hierarchical Spatial Index"></a>
+          <a href="https://lookerstudio.google.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-google-datastudio.svg" alt="Google Data Studio" title="Google Data Studio"></a>
+          <a href="https://www.ibm.com/spss" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-ibmspss.svg" alt="IBM SPSS" title="IBM SPSS"></a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-github.svg" alt="GitHub" title="GitHub"></a>
+          <a href="https://www.esri.com/arcgis" target="_blank" rel="noopener noreferrer"><img src="assets/icons/icon-esriarcgis.svg" alt="ESRI ArcGIS" title="ESRI ArcGIS"></a>
         </div>
 
       </section>
@@ -150,7 +160,7 @@
             <a class="entry-title" href="https://github.com/agstnrdz/inundaciones/" target="_blank" rel="noopener noreferrer">Visor de susceptibilidad a inundaciones en Comodoro Rivadavia</a>
           </div>
           <span class="entry-date">2026</span>
-          <p class="entry-desc">Desarrollé un <a class="inline-link" href="https://github.com/agstnrdz/inundaciones" target="_blank" rel="noopener noreferrer"><u>visor</u></a> interactivo 
+          <p class="entry-desc">Desarrollé un <a class="inline-link" href="https://github.com/agstnrdz/inundaciones/" target="_blank" rel="noopener noreferrer"><u>visor</u></a> interactivo 
             de susceptibilidad a inundaciones para el área urbana de Comodoro Rivadavia, basado en el modelo HAND (Height Above Nearest Drainage). Permite explorar distintos umbrales 
             de altura sobre el drenaje más cercano y observar en tiempo real la superficie y población expuesta por barrio y grupo etario: el análisis identifica cerca de 30.000 
             personas (13,9% de la población) dentro de los 0-5 metros de altura sobre drenaje, afectando aproximadamente el 15% de la huella urbana.</p>
@@ -257,7 +267,7 @@
           <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
           <span class="entry-date">2025</span>
           <p class="entry-desc">Expositor de la ponencia "Procesamiento del censo 2022: metodologías, antecedentes y análisis territorial por barrio".</p>
-          <a href="../assets/certs/2025_cert_expositor_CONTIG.png" target="_blank" class="entry-link">Ver certificado ↗</a>
+          <a href="assets/certs/2025_cert_expositor_CONTIG.png" target="_blank" class="entry-link">Ver certificado ↗</a>
         </div>
 
         <div class="entry">
@@ -267,7 +277,7 @@
           <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
           <span class="entry-date">2025</span>
           <p class="entry-desc">Disertante del taller pre-congreso en el VII Congreso Nacional de Tecnologías de la Información Geográfica.</p>
-          <a href="../assets/certs/2025_cert_disertante_CONTIG.png" target="_blank" class="entry-link">Ver certificado ↗</a>
+          <a href="assets/certs/2025_cert_disertante_CONTIG.png" target="_blank" class="entry-link">Ver certificado ↗</a>
         </div>
 
         <div class="entry">
@@ -277,7 +287,7 @@
           <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
           <span class="entry-date">2024</span>
           <p class="entry-desc">Expositor de la ponencia "Cartografía temática SIG de usos de los médanos costeros de la ciudad de Puerto Madryn".</p>
-          <a href="../assets/certs/2024_cert_expositor_PE_Medanos.jpg" target="_blank" class="entry-link">Ver certificado ↗</a>
+          <a href="assets/certs/2024_cert_expositor_PE_Medanos.jpg" target="_blank" class="entry-link">Ver certificado ↗</a>
         </div>
 
         <div class="entry">
@@ -287,7 +297,7 @@
           <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
           <span class="entry-date">2022</span>
           <p class="entry-desc">Expositor de la ponencia "Tecnologías de la Información Geográfica y datos abiertos para la elaboración de diagnósticos territoriales: espacios verdes en Comodoro Rivadavia, Chubut".</p>
-          <a href="../assets/certs/2022_cert_expositor_XII_Jornadas_Pat.jpg" target="_blank" class="entry-link">Ver certificado ↗</a>
+          <a href="assets/certs/2022_cert_expositor_XII_Jornadas_Pat.jpg" target="_blank" class="entry-link">Ver certificado ↗</a>
         </div>
 
       </section>
@@ -340,8 +350,8 @@
               <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_IDERA_MVT_server.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_IDERA_MVT_server.png" alt="Certificado">
+            <a href="assets/certs/2026_cert_IDERA_MVT_server.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_IDERA_MVT_server.png" alt="Certificado">
             </a>
           </div>
 
@@ -353,8 +363,8 @@
               <span class="entry-org">Anthropic Academy</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Anthropic_Teaching_AI_Fluency.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -366,8 +376,8 @@
               <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_ARSET_4.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_ARSET_4.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_ARSET_4.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_ARSET_4.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -379,8 +389,8 @@
               <span class="entry-org">Anthropic Academy</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Anthropic_AI_Fluency.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -392,8 +402,8 @@
               <span class="entry-org">Anthropic Academy</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Anthropic_Claude_Cowork.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -405,8 +415,8 @@
               <span class="entry-org">Anthropic Academy</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Anthropic_Claude_101.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -418,8 +428,8 @@
               <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_ARSET_3.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_ARSET_3.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_ARSET_3.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_ARSET_3.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -431,8 +441,8 @@
               <span class="entry-org">Santander Open Academy</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Santander_Python.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Santander_Python.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Santander_Python.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Santander_Python.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -444,8 +454,8 @@
               <span class="entry-org">Santander Open Academy &amp; Pennsylvania State University ELP</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Santander_English.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Santander_English.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Santander_English.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Santander_English.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -457,8 +467,8 @@
               <span class="entry-org">Santander Open Academy &amp; IE University</span>
               <span class="entry-date">2026</span>
             </div>
-            <a href="../assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" alt="Certificado">
+            <a href="assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2026_cert_aprobacion_Santander_Data_Science.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -471,8 +481,8 @@
               <span class="entry-date">2025</span>
               <p class="entry-desc">Participación en la Unidad Ejecutora del Proyecto de Extensión.</p>
             </div>
-            <a href="../assets/certs/2025_cert_participacion_Proy_Extension.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_participacion_Proy_Extension.png" alt="Certificado">
+            <a href="assets/certs/2025_cert_participacion_Proy_Extension.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_participacion_Proy_Extension.png" alt="Certificado">
             </a>
           </div>
 
@@ -485,8 +495,8 @@
               <span class="entry-date">2025</span>
               <p class="entry-desc">Calificación: 100.</p>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_Sem_HAND.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -498,8 +508,8 @@
               <span class="entry-org">Centro Argentino de Cartografía</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" alt="Certificado">
+            <a href="assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_asistencia_CentroCart_GISday.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -511,8 +521,8 @@
               <span class="entry-org">Escuela de Economía y Gestión para el Desarrollo Local</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_Redatam.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_Redatam.jpg" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_Redatam.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_Redatam.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -524,8 +534,8 @@
               <span class="entry-org">Escuela de Economía y Gestión para el Desarrollo Local</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_QGIS_estad.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -537,8 +547,8 @@
               <span class="entry-org">Infraestructura de Datos Espaciales de la República Argentina</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_asistente_IDERA_3.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_asistente_IDERA_3.png" alt="Certificado">
+            <a href="assets/certs/2025_cert_asistente_IDERA_3.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_asistente_IDERA_3.png" alt="Certificado">
             </a>
           </div>
 
@@ -550,8 +560,8 @@
               <span class="entry-org">Instituto Superior de la Carrera del Gobierno de la Ciudad de Buenos Aires</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_Esp_IA_ISC.png" alt="Certificado">
             </a>
           </div>
 
@@ -563,8 +573,8 @@
               <span class="entry-org">Instituto Superior de la Carrera del Gobierno de la Ciudad de Buenos Aires</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_Esp_Datos_ISC.png" alt="Certificado">
             </a>
           </div>
 
@@ -576,8 +586,8 @@
               <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_ARSET_2.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_ARSET_2.jpg" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_ARSET_2.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_ARSET_2.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -589,8 +599,8 @@
               <span class="entry-org">NASA's Applied Remote Sensing Training Program (ARSET)</span>
               <span class="entry-date">2025</span>
             </div>
-            <a href="../assets/certs/2025_cert_aprobacion_ARSET.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2025_cert_aprobacion_ARSET.jpg" alt="Certificado">
+            <a href="assets/certs/2025_cert_aprobacion_ARSET.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2025_cert_aprobacion_ARSET.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -603,8 +613,8 @@
               <span class="entry-date">2024</span>
               <p class="entry-desc">Taller virtual del Ciclo de Desarrollo de Capacidades de IDERA.</p>
             </div>
-            <a href="../assets/certs/2024_cert_asistente_IDERA.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2024_cert_asistente_IDERA.png" alt="Certificado">
+            <a href="assets/certs/2024_cert_asistente_IDERA.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2024_cert_asistente_IDERA.png" alt="Certificado">
             </a>
           </div>
 
@@ -616,8 +626,8 @@
               <span class="entry-org">Facultad de Humanidades, Universidad Nacional del Nordeste</span>
               <span class="entry-date">2024</span>
             </div>
-            <a href="../assets/certs/2024_cert_asistente_GISday.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2024_cert_asistente_GISday.png" alt="Certificado">
+            <a href="assets/certs/2024_cert_asistente_GISday.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2024_cert_asistente_GISday.png" alt="Certificado">
             </a>
           </div>
 
@@ -630,8 +640,8 @@
               <span class="entry-date">2024</span>
               <p class="entry-desc">Taller virtual del Ciclo de Desarrollo de Capacidades de IDERA.</p>
             </div>
-            <a href="../assets/certs/2024_cert_asistente_IDERA_2.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2024_cert_asistente_IDERA_2.png" alt="Certificado">
+            <a href="assets/certs/2024_cert_asistente_IDERA_2.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2024_cert_asistente_IDERA_2.png" alt="Certificado">
             </a>
           </div>
 
@@ -644,8 +654,8 @@
               <span class="entry-date">2020</span>
               <p class="entry-desc">Expositor de la ponencia "Reflexiones en torno a nuestras prácticas: docencia, investigación y extensión en Geografía".</p>
             </div>
-            <a href="../assets/certs/2020_cert_expositor_Extension_geografia.jpg" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2020_cert_expositor_Extension_geografia.jpg" alt="Certificado">
+            <a href="assets/certs/2020_cert_expositor_Extension_geografia.jpg" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2020_cert_expositor_Extension_geografia.jpg" alt="Certificado">
             </a>
           </div>
 
@@ -657,8 +667,8 @@
               <span class="entry-org">Facultad de Humanidades y Ciencias Sociales, Universidad Nacional de la Patagonia San Juan Bosco</span>
               <span class="entry-date">2019</span>
             </div>
-            <a href="../assets/certs/2019_cert_expositor_Jornadas_Pat.png" target="_blank" class="entry-cert-thumb">
-              <img src="../assets/certs/2019_cert_expositor_Jornadas_Pat.png" alt="Certificado">
+            <a href="assets/certs/2019_cert_expositor_Jornadas_Pat.png" target="_blank" class="entry-cert-thumb">
+              <img src="assets/certs/2019_cert_expositor_Jornadas_Pat.png" alt="Certificado">
             </a>
           </div>
 
@@ -728,6 +738,14 @@
         }
         localStorage.setItem('theme', nuevo);
         reflejar(nuevo);
+      });
+    })();
+
+    (function () {
+      const backToTop = document.getElementById('back-to-top');
+      if (!backToTop) return;
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     })();
 
